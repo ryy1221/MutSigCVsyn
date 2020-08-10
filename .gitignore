@@ -1,0 +1,4 @@
+# ignore coverage input folder and maf input folder
+cov/**
+maf/**
+!/**/.gitkeep

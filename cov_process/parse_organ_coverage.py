@@ -80,7 +80,7 @@ def search_tumor_type_column(coverage_file):
         for lines in file_coverage:
             line_split = lines.split("\t")
             tumor_type = line_split[tumor_col]
-            file_name = "merged_consensus_passonly_snv_mnv_indel_" + str(tumor_type) + "_05252020.maf"
+            file_name = "merged_consensus_passonly_snv_mnv_indel_" + str(tumor_type) + ".maf"
             # IF file doesn't exist, create file and write the header line
             if not os.path.exists(new_path + '/' + file_name):
                 with open(new_path + '/' + file_name, 'w') as f:

@@ -1,5 +1,6 @@
 # ignore coverage input folder, annotation folder and maf input folder content
 cov_out/**
 anno_ref/**
-maf_out`/**
+maf_out/**
+maf_raw/**
 !/**/.gitkeep

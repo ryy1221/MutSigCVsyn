@@ -8,6 +8,8 @@ from Bio.Seq import Seq
 from Bio.Alphabet import generic_dna
 import re
 import time
+import os
+from os import listdir
 
 # Global variable nucleotides and condon table
 nuc = ["A", "T", "C", "G"]
@@ -38,7 +40,7 @@ null_list = ["Nonstop_Mutation", "Nonsense_Mutation", "Splice_Site", "DEL", "INS
 # Use the optional parse function for input files.
 def parse_arguments():
     parser = OptionParser("Usage: %prog -i <inputpath>")
-    parser.add_option("-m", "--mutation_file",
+    parser.add_option("-m", "--mutation_dir",
                       dest="inputPath1",
                       help="The full absolute path of the mutation file")
     parser.add_option("-f", "--fasta_file",
@@ -213,24 +215,27 @@ def assign_categ(maf_file, base_dict):
 
 if __name__ == '__main__':
     arguments = parse_arguments()
-    file_mut = arguments.inputPath1
+    dir_mut = arguments.inputPath1
     file_fasta = arguments.inputPath2
-
-    # first, get the mutation position
-    start1 = time.time()
-    dict_mut = get_mutation_position(file_mut)
-    end1 = time.time()
-    print "***FINISH GETTING POSITION: "+ str(end1-start1)
     # second, store the genome file into a dictionary
     dict_record = SeqIO.to_dict(SeqIO.parse(file_fasta, 'fasta'))  # the keys are ['chrN']
     print "***FINISH READING FASTA FILE"
-    # third, according to the positions find before and after bases
-    start2 = time.time()
-    dict_mut = get_base(dict_mut)
-    end2 = time.time()
-    print "***FINISH GETTING GENOME BASE: "+ str(end2-start2)
-    # finally, assign categ and write to new mutation file
-    start3 = time.time()
-    assign_categ(file_mut, dict_mut)
-    end3 = time.time()
-    print "***FINISH ASSIGNING CATEG: "+ str(end3-start3)
+
+    list_f = listdir(dir_mut)
+    for f in list_f:
+        file_mut = os.path.join(dir_mut,f)
+        # first, get the mutation position
+        start1 = time.time()
+        dict_mut = get_mutation_position(file_mut)
+        end1 = time.time()
+        print "***FINISH GETTING POSITION: "+ str(end1-start1)
+        # third, according to the positions find before and after bases
+        start2 = time.time()
+        dict_mut = get_base(dict_mut)
+        end2 = time.time()
+        print "***FINISH GETTING GENOME BASE: "+ str(end2-start2)
+        # finally, assign categ and write to new mutation file
+        start3 = time.time()
+        assign_categ(file_mut, dict_mut)
+        end3 = time.time()
+        print "***FINISH ASSIGNING CATEG: "+ str(end3-start3)

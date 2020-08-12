@@ -3,4 +3,5 @@ cov_out/**
 anno_ref/**
 maf_out/**
 maf_raw/**
+mutsit_out/**
 !/**/.gitkeep

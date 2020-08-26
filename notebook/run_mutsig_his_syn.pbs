@@ -1,0 +1,15 @@
+#!/bin/bash
+#PBS -l pmem=32gb
+#PBS -l nodes=1:ppn=2
+#PBS -j oe 
+#PBS -l walltime=24:00:00
+ 
+cd $PBS_O_WORKDIR 
+module load python/2.7.14-anaconda5.0.1
+
+echo "...started at $(date)"
+python /gpfs/scratch/yur97/yur97/gitlab/pcawg-to-mutsigcv/notebook/run_mutsig_his_syn.py 
+
+echo "...ended at $(date)" 
+
+####### ^---- JOB COMMANDS ABOVE ----^

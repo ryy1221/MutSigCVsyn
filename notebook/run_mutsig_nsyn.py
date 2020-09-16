@@ -78,4 +78,4 @@ def runMutSig(org, syn):
                 end = time.time()
                 print "TIME USED FOR " + organ + " is " + str(end - start)
 
-runMutSig(org=False, syn = True)
+runMutSig(org=True, syn = False)

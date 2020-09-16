@@ -3,5 +3,9 @@ cov_out/**
 anno_ref/**
 maf_out/**
 maf_raw/**
-mutsit_out/**
+mutsig_out/**
+org_cov_maf/**
+his_cov_maf/**
 !/**/.gitkeep
+proc_09152020/**
+multitumor/**

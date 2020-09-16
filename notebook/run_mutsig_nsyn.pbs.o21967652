@@ -1,0 +1,4673 @@
+...started at Wed Aug 26 21:43:26 EDT 2020
+NOT RUNNING DONE FOR: Ovary
+NOT RUNNING DONE FOR: Thy
+NOT RUNNING DONE FOR: Biliary
+NOT RUNNING DONE FOR: Breast
+NOT RUNNING DONE FOR: Panc
+NOT RUNNING DONE FOR: Lung
+NOT RUNNING DONE FOR: Liver
+NOT RUNNING DONE FOR: CNS
+NOT RUNNING DONE FOR: Lymph
+NOT RUNNING DONE FOR: Bone
+NOT RUNNING DONE FOR: Eso
+
+======================================
+  MutSigCV
+  v1.4
+
+  (c) Mike Lawrence and Gaddy Getz
+  Broad Institute of MIT and Harvard
+======================================
+
+
+MutSigCV: PREPROCESS
+--------------------
+Loading mutation_file...
+Loading coverage file...
+Processing mutation "effect"...
+WARNING:  662531/9217981 mutations could not be mapped to effect using mutation_type_dictionary_file:
+
+    Start_Codon_SNP: [42]
+            lincRNA: [662489]
+          ----TOTAL: [662531]
+          They will be removed from the analysis.
+Processing mutation "categ"...
+Will use the categories already present.
+Writing preprocessed files.
+HUGE STRUCT: SAVING CHUNK 1/43
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 2/43
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 3/43
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 4/43
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 5/43
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 6/43
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 7/43
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 8/43
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 9/43
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 10/43
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 11/43
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 12/43
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 13/43
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 14/43
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 15/43
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 16/43
+  [save_struct] 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 17/43
+  [save_struct] 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 18/43
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 19/43
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 20/43
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 21/43
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 22/43
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 23/43
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 24/43
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 25/43
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 26/43
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 27/43
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 28/43
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 29/43
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 30/43
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 31/43
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 32/43
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 33/43
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 34/43
+  [save_struct] 14/50 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 35/43
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 36/43
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 37/43
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 38/43
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 39/43
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 40/43
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 41/43
+  [save_struct] 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 42/43
+  [save_struct] 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 43/43
+  [save_struct] 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 1/2
+  [save_struct] 22/55 23/55 24/55 25/55 26/55 27/55 28/55 29/55 30/55 31/55 32/55 33/55 34/55 35/55 36/55 37/55 38/55 39/55 40/55 41/55 42/55 43/55 44/55 45/55 46/55 47/55 48/55 49/55 50/55 51/55 52/55 53/55 54/55 55/55  [collapse]
+HUGE STRUCT: SAVING CHUNK 2/2
+  [save_struct] 25/55 26/55 27/55 28/55 29/55 30/55 31/55 32/55 33/55 34/55 35/55 36/55 37/55 38/55 39/55 40/55 41/55 42/55 43/55 44/55 45/55 46/55 47/55 48/55 49/55 50/55 51/55 52/55 53/55 54/55 55/55  [collapse]
+MutSig_preprocess finished.
+
+
+MutSigCV: RUN
+-------------
+Loading mutation_file...
+NOTE:  Both "gene" and "Hugo_Symbol" are present in mutation_file.  Using "gene".
+NOTE:  Both "patient" and "Tumor_Sample_Barcode" are present in mutation_file.  Using "patient".
+Loading coverage file...
+Loading covariate file...
+NOTE:  9520/25884 gene names could not be mapped to coverage information.  Excluding them.
+NOTE:  Converting "-" to "_" in patient names.
+
+cellContents =
+
+    '00aa769d622c433e8a8a63fb5c41ea42'
+
+
+cellContents =
+
+    '03cff38d7e294409a508749bddb1b3df'
+
+
+cellContents =
+
+    '0548634924a44931bf5fc9fefe369af2'
+
+
+cellContents =
+
+    '05780d4880e74d70b00c081f8a9519f2'
+
+
+cellContents =
+
+    '080ecc31756a4a1ba51ed632ac8219f7'
+
+
+cellContents =
+
+    '0980e7fd051d45e99ca62baf073da4e8'
+
+
+cellContents =
+
+    '10ad692b4c3d42de9b5e4968441388b3'
+
+
+cellContents =
+
+    '14334aea2dae428c9d4a1a37878dfc3f'
+
+
+cellContents =
+
+    '14c5b81dda494db1983477711c2b1d38'
+
+
+cellContents =
+
+    '154f80bd984c4792bb8920c4da0c08e0'
+
+
+cellContents =
+
+    '2cdc4cce08774ec185f520c909912e65'
+
+
+cellContents =
+
+    '2df02f2b9f1c4249b3b4b03079cd97d9'
+
+
+cellContents =
+
+    '31f02f4844a4445eac3de9bf3d8d25a2'
+
+
+cellContents =
+
+    '3c019b2f52ec40a899b598c1423ce627'
+
+
+cellContents =
+
+    '4019c219c51e479f8a9dcfa6816ed696'
+
+
+cellContents =
+
+    '428c100fd7d04860a8fc2bae6a4bba95'
+
+
+cellContents =
+
+    '42d200280ddc4dac9f05d674f8915f21'
+
+
+cellContents =
+
+    '492b4e5812e247b2bd4728f8607072fa'
+
+
+cellContents =
+
+    '4cfb0aee6661478a86949d8ba15e46b7'
+
+
+cellContents =
+
+    '5534580383d44fdbb0ee328753801da1'
+
+
+cellContents =
+
+    '5b180356cf584fada3d400fc12b43fcc'
+
+
+cellContents =
+
+    '6051f40a99e5446192550e70d757b4d5'
+
+
+cellContents =
+
+    '63bc376e5a3d44fd8d77686dfc41e458'
+
+
+cellContents =
+
+    '667013955a5341bb866b3bbf08bc33ab'
+
+
+cellContents =
+
+    '6ca5c1bb275b4d05948a3c6c7d03fab9'
+
+
+cellContents =
+
+    '75ad15b98f9c40c19ca61e8454fbd310'
+
+
+cellContents =
+
+    '786fc3e4e2bf4914925141c800ebb2fa'
+
+
+cellContents =
+
+    '7d59205a65ec4341974828639d82ed29'
+
+
+cellContents =
+
+    '81b1e78c60324ff4b52a83456b9450ea'
+
+
+cellContents =
+
+    '85e29049a5e849faa576e113c7b2c2e3'
+
+
+cellContents =
+
+    '8a929c5535a64645bb704b85d281b139'
+
+
+cellContents =
+
+    '8da641e49b124163bd1e9d5af91e5186'
+
+
+cellContents =
+
+    '93ff786e01654b028d27806d422e93fc'
+
+
+cellContents =
+
+    '9e5f0a23e1844611b42be882dcf23acd'
+
+
+cellContents =
+
+    'a0f94565916949ee8e6a21bdc43d9de6'
+
+
+cellContents =
+
+    'a64000df16e54b88865f5c680adf60eb'
+
+
+cellContents =
+
+    'aa06ae4623364666a3affc790daf8da4'
+
+
+cellContents =
+
+    'b2afbcbad67d43f1be3b05f3a5836ec0'
+
+
+cellContents =
+
+    'b6b6e1d3c5924836bdadd53af2dbcc9a'
+
+
+cellContents =
+
+    'b7f2e85a3c6a48b78a4f2dec1d85359d'
+
+
+cellContents =
+
+    'bb6150f723e440f2b4666b6edd19c502'
+
+
+cellContents =
+
+    'cd3d7559b583447481df4bf9232de3c2'
+
+
+cellContents =
+
+    'd0a0d84532e24590b90929bd27b92900'
+
+
+cellContents =
+
+    'd3d65db336f941c78e5e1683ce94dfcb'
+
+
+cellContents =
+
+    'd3daf3731485455ea0a18e33d215d623'
+
+
+cellContents =
+
+    'd452293a61484fcf9fbc446815016751'
+
+
+cellContents =
+
+    'd9690a27bb02498eb15cee76e31d16ee'
+
+
+cellContents =
+
+    'e3ef5cad4d6e4f04babba908ee02644b'
+
+
+cellContents =
+
+    'ecf4e05a09124b93ad66323002f0c845'
+
+
+cellContents =
+
+    'faff4626615b416ab7a69d177dcc94a9'
+
+
+cellContents =
+
+    'fc453f6766234e8cb5190bd79e4d4651'
+
+Building n and N tables...
+Processing covariates...
+Finding bagels...  1000/16838 2000/16838 3000/16838 4000/16838 5000/16838 6000/16838 7000/16838 8000/16838 9000/16838 10000/16838 11000/16838 12000/16838 13000/16838 14000/16838 15000/16838 16000/16838 
+Expanding to (x,X)_gcp...
+Calculating p-value using 2D Projection method...  1000/16838 2000/16838 3000/16838 4000/16838 5000/16838 6000/16838 7000/16838 8000/16838 9000/16838 10000/16838 11000/16838 12000/16838 13000/16838 14000/16838 15000/16838 16000/16838 
+Done.  Wrote results to /storage/home/yur97/yur97/gitlab/pcawg-to-mutsigcv/mutsig_out/nsyn/out08262020/ColoRect/ColoRect.sig_genes.txt
+TIME USED FOR ColoRect is 2905.2141881
+
+======================================
+  MutSigCV
+  v1.4
+
+  (c) Mike Lawrence and Gaddy Getz
+  Broad Institute of MIT and Harvard
+======================================
+
+
+MutSigCV: PREPROCESS
+--------------------
+Loading mutation_file...
+Loading coverage file...
+Processing mutation "effect"...
+WARNING:  73783/1121478 mutations could not be mapped to effect using mutation_type_dictionary_file:
+
+    Start_Codon_SNP: [21]
+            lincRNA: [73762]
+          ----TOTAL: [73783]
+          They will be removed from the analysis.
+Processing mutation "categ"...
+Will use the categories already present.
+Writing preprocessed files.
+HUGE STRUCT: SAVING CHUNK 1/6
+  [save_struct] 14/50 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 2/6
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 3/6
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 4/6
+  [save_struct] 14/50 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 5/6
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 6/6
+HUGE STRUCT: SAVING CHUNK 1/7
+  [save_struct] 66/189 67/189 68/189 69/189 70/189 71/189 72/189 73/189 74/189 75/189 76/189 77/189 78/189 79/189 80/189 81/189 82/189 83/189 84/189 85/189 86/189 87/189 88/189 89/189 90/189 91/189 92/189 93/189 94/189 95/189 96/189 97/189 98/189 99/189 100/189 101/189 102/189 103/189 104/189 105/189 106/189 107/189 108/189 109/189 110/189 111/189 112/189 113/189 114/189 115/189 116/189 117/189 118/189 119/189 120/189 121/189 122/189 123/189 124/189 125/189 126/189 127/189 128/189 129/189 130/189 131/189 132/189 133/189 134/189 135/189 136/189 137/189 138/189 139/189 140/189 141/189 142/189 143/189 144/189 145/189 146/189 147/189 148/189 149/189 150/189 151/189 152/189 153/189 154/189 155/189 156/189 157/189 158/189 159/189 160/189 161/189 162/189 163/189 164/189 165/189 166/189 167/189 168/189 169/189 170/189 171/189 172/189 173/189 174/189 175/189 176/189 177/189 178/189 179/189 180/189 181/189 182/189 183/189 184/189 185/189 186/189 187/189 188/189 189/189  [collapse]
+HUGE STRUCT: SAVING CHUNK 2/7
+  [save_struct] 73/189 74/189 75/189 76/189 77/189 78/189 79/189 80/189 81/189 82/189 83/189 84/189 85/189 86/189 87/189 88/189 89/189 90/189 91/189 92/189 93/189 94/189 95/189 96/189 97/189 98/189 99/189 100/189 101/189 102/189 103/189 104/189 105/189 106/189 107/189 108/189 109/189 110/189 111/189 112/189 113/189 114/189 115/189 116/189 117/189 118/189 119/189 120/189 121/189 122/189 123/189 124/189 125/189 126/189 127/189 128/189 129/189 130/189 131/189 132/189 133/189 134/189 135/189 136/189 137/189 138/189 139/189 140/189 141/189 142/189 143/189 144/189 145/189 146/189 147/189 148/189 149/189 150/189 151/189 152/189 153/189 154/189 155/189 156/189 157/189 158/189 159/189 160/189 161/189 162/189 163/189 164/189 165/189 166/189 167/189 168/189 169/189 170/189 171/189 172/189 173/189 174/189 175/189 176/189 177/189 178/189 179/189 180/189 181/189 182/189 183/189 184/189 185/189 186/189 187/189 188/189 189/189  [collapse]
+HUGE STRUCT: SAVING CHUNK 3/7
+  [save_struct] 73/189 74/189 75/189 76/189 77/189 78/189 79/189 80/189 81/189 82/189 83/189 84/189 85/189 86/189 87/189 88/189 89/189 90/189 91/189 92/189 93/189 94/189 95/189 96/189 97/189 98/189 99/189 100/189 101/189 102/189 103/189 104/189 105/189 106/189 107/189 108/189 109/189 110/189 111/189 112/189 113/189 114/189 115/189 116/189 117/189 118/189 119/189 120/189 121/189 122/189 123/189 124/189 125/189 126/189 127/189 128/189 129/189 130/189 131/189 132/189 133/189 134/189 135/189 136/189 137/189 138/189 139/189 140/189 141/189 142/189 143/189 144/189 145/189 146/189 147/189 148/189 149/189 150/189 151/189 152/189 153/189 154/189 155/189 156/189 157/189 158/189 159/189 160/189 161/189 162/189 163/189 164/189 165/189 166/189 167/189 168/189 169/189 170/189 171/189 172/189 173/189 174/189 175/189 176/189 177/189 178/189 179/189 180/189 181/189 182/189 183/189 184/189 185/189 186/189 187/189 188/189 189/189  [collapse]
+HUGE STRUCT: SAVING CHUNK 4/7
+  [save_struct] 72/189 73/189 74/189 75/189 76/189 77/189 78/189 79/189 80/189 81/189 82/189 83/189 84/189 85/189 86/189 87/189 88/189 89/189 90/189 91/189 92/189 93/189 94/189 95/189 96/189 97/189 98/189 99/189 100/189 101/189 102/189 103/189 104/189 105/189 106/189 107/189 108/189 109/189 110/189 111/189 112/189 113/189 114/189 115/189 116/189 117/189 118/189 119/189 120/189 121/189 122/189 123/189 124/189 125/189 126/189 127/189 128/189 129/189 130/189 131/189 132/189 133/189 134/189 135/189 136/189 137/189 138/189 139/189 140/189 141/189 142/189 143/189 144/189 145/189 146/189 147/189 148/189 149/189 150/189 151/189 152/189 153/189 154/189 155/189 156/189 157/189 158/189 159/189 160/189 161/189 162/189 163/189 164/189 165/189 166/189 167/189 168/189 169/189 170/189 171/189 172/189 173/189 174/189 175/189 176/189 177/189 178/189 179/189 180/189 181/189 182/189 183/189 184/189 185/189 186/189 187/189 188/189 189/189  [collapse]
+HUGE STRUCT: SAVING CHUNK 5/7
+  [save_struct] 73/189 74/189 75/189 76/189 77/189 78/189 79/189 80/189 81/189 82/189 83/189 84/189 85/189 86/189 87/189 88/189 89/189 90/189 91/189 92/189 93/189 94/189 95/189 96/189 97/189 98/189 99/189 100/189 101/189 102/189 103/189 104/189 105/189 106/189 107/189 108/189 109/189 110/189 111/189 112/189 113/189 114/189 115/189 116/189 117/189 118/189 119/189 120/189 121/189 122/189 123/189 124/189 125/189 126/189 127/189 128/189 129/189 130/189 131/189 132/189 133/189 134/189 135/189 136/189 137/189 138/189 139/189 140/189 141/189 142/189 143/189 144/189 145/189 146/189 147/189 148/189 149/189 150/189 151/189 152/189 153/189 154/189 155/189 156/189 157/189 158/189 159/189 160/189 161/189 162/189 163/189 164/189 165/189 166/189 167/189 168/189 169/189 170/189 171/189 172/189 173/189 174/189 175/189 176/189 177/189 178/189 179/189 180/189 181/189 182/189 183/189 184/189 185/189 186/189 187/189 188/189 189/189  [collapse]
+HUGE STRUCT: SAVING CHUNK 6/7
+  [save_struct] 72/189 73/189 74/189 75/189 76/189 77/189 78/189 79/189 80/189 81/189 82/189 83/189 84/189 85/189 86/189 87/189 88/189 89/189 90/189 91/189 92/189 93/189 94/189 95/189 96/189 97/189 98/189 99/189 100/189 101/189 102/189 103/189 104/189 105/189 106/189 107/189 108/189 109/189 110/189 111/189 112/189 113/189 114/189 115/189 116/189 117/189 118/189 119/189 120/189 121/189 122/189 123/189 124/189 125/189 126/189 127/189 128/189 129/189 130/189 131/189 132/189 133/189 134/189 135/189 136/189 137/189 138/189 139/189 140/189 141/189 142/189 143/189 144/189 145/189 146/189 147/189 148/189 149/189 150/189 151/189 152/189 153/189 154/189 155/189 156/189 157/189 158/189 159/189 160/189 161/189 162/189 163/189 164/189 165/189 166/189 167/189 168/189 169/189 170/189 171/189 172/189 173/189 174/189 175/189 176/189 177/189 178/189 179/189 180/189 181/189 182/189 183/189 184/189 185/189 186/189 187/189 188/189 189/189  [collapse]
+HUGE STRUCT: SAVING CHUNK 7/7
+  [save_struct] 101/189 102/189 103/189 104/189 105/189 106/189 107/189 108/189 109/189 110/189 111/189 112/189 113/189 114/189 115/189 116/189 117/189 118/189 119/189 120/189 121/189 122/189 123/189 124/189 125/189 126/189 127/189 128/189 129/189 130/189 131/189 132/189 133/189 134/189 135/189 136/189 137/189 138/189 139/189 140/189 141/189 142/189 143/189 144/189 145/189 146/189 147/189 148/189 149/189 150/189 151/189 152/189 153/189 154/189 155/189 156/189 157/189 158/189 159/189 160/189 161/189 162/189 163/189 164/189 165/189 166/189 167/189 168/189 169/189 170/189 171/189 172/189 173/189 174/189 175/189 176/189 177/189 178/189 179/189 180/189 181/189 182/189 183/189 184/189 185/189 186/189 187/189 188/189 189/189  [collapse]
+MutSig_preprocess finished.
+
+
+MutSigCV: RUN
+-------------
+Loading mutation_file...
+NOTE:  Both "gene" and "Hugo_Symbol" are present in mutation_file.  Using "gene".
+NOTE:  Both "patient" and "Tumor_Sample_Barcode" are present in mutation_file.  Using "patient".
+Loading coverage file...
+Loading covariate file...
+NOTE:  8210/23958 gene names could not be mapped to coverage information.  Excluding them.
+NOTE:  Converting "-" to "_" in patient names.
+
+cellContents =
+
+    '005794f15a8745b5981183ddf6924568'
+
+
+cellContents =
+
+    '00bf03508c7c4b9e814313ea2dc1122f'
+
+
+cellContents =
+
+    '00db1b958ca34cc4bb466b8c8019a7c7'
+
+
+cellContents =
+
+    '0168a2a6c3af4d58a51cd33f0fc7876d'
+
+
+cellContents =
+
+    '04db8bef877748acbc2e3c9acb103f48'
+
+
+cellContents =
+
+    '063cfacf99334a2d89210aeb76e12779'
+
+
+cellContents =
+
+    '07e0e938f61f477a92a25b7e74b78943'
+
+
+cellContents =
+
+    '09537dcec7974b60962ad4c3cd6ab00a'
+
+
+cellContents =
+
+    '0b811c6a8f0544bdac33fb720d189e71'
+
+
+cellContents =
+
+    '0ed63d84d3fe4289925535f4a03b703b'
+
+
+cellContents =
+
+    '0f53e7571823409fa0ea249270728e15'
+
+
+cellContents =
+
+    '10d15b7a16d14953aaeff193ffa97f42'
+
+
+cellContents =
+
+    '141918cd3e2345bc96e1b208c80f69e7'
+
+
+cellContents =
+
+    '148536ceee2a4952a19d10d6f44146b9'
+
+
+cellContents =
+
+    '14dd86c1dfb34124a4534d64223bc048'
+
+
+cellContents =
+
+    '155873b2e5de405f87f66de0d238b160'
+
+
+cellContents =
+
+    '15a936570521430aa816bf0842374b75'
+
+
+cellContents =
+
+    '19d6cf341cd74242a4d15d3e11f428aa'
+
+
+cellContents =
+
+    '1d325d84a3a04802984276cb21cecb1c'
+
+
+cellContents =
+
+    '1e046ab9fa4c4c158d78ed0048c80ebf'
+
+
+cellContents =
+
+    '1e8ae8dd74c144d5a74ebfdce801c736'
+
+
+cellContents =
+
+    '2425a532f562423a88f5228642f53875'
+
+
+cellContents =
+
+    '24f887e1ce8240f3967411102bd076c0'
+
+
+cellContents =
+
+    '252a1c43f95444d78e316bcd0157a05c'
+
+
+cellContents =
+
+    '267a986217bd4056ba4a1f373736ffbb'
+
+
+cellContents =
+
+    '29548b5fc88a49088c46e86483e75067'
+
+
+cellContents =
+
+    '2c581a7477164c20b366a8e1d9a901f6'
+
+
+cellContents =
+
+    '2ccd028de7e04f77a512f658a31819a4'
+
+
+cellContents =
+
+    '2deb8f9a9e0a46d1bcb5902db3b5c8ac'
+
+
+cellContents =
+
+    '2e8ad1cdd5d54bb48bbde9bef45088da'
+
+
+cellContents =
+
+    '3232f77fb7454232a8026699b6356efd'
+
+
+cellContents =
+
+    '33b7e799ad10498f99488ce433311539'
+
+
+cellContents =
+
+    '33bf46dd16b349c680d776caf27aa0f4'
+
+
+cellContents =
+
+    '345a06d6fa5c4674a84788a6b537cf3c'
+
+
+cellContents =
+
+    '34739bd6b3be441d8cdbe4233bf14080'
+
+
+cellContents =
+
+    '34ab4c5752404af7a329a5ab55934fd4'
+
+
+cellContents =
+
+    '39c55051e1bc4081962a17205645de45'
+
+
+cellContents =
+
+    '3ace181a23bd424ea87ee0c01a2a2cb8'
+
+
+cellContents =
+
+    '3afae3fb2d874724a589d31cce1f4c28'
+
+
+cellContents =
+
+    '3afb3f57545a4ed594612fcb28d89399'
+
+
+cellContents =
+
+    '3b7810f7f8ff4d62b7663ba06170194c'
+
+
+cellContents =
+
+    '3feac02ac99f4dd99effe4f5e87f7dc5'
+
+
+cellContents =
+
+    '42f88b95fa1247c793f1cf72f207291c'
+
+
+cellContents =
+
+    '45348eff4b094776825eb18de9dba937'
+
+
+cellContents =
+
+    '4729fe4bc1ac489ba67e91e5c5e3ff8c'
+
+
+cellContents =
+
+    '483bb781017942e1bf9c487b240769b8'
+
+
+cellContents =
+
+    '494701ce05d4440ba65ed925902b9d42'
+
+
+cellContents =
+
+    '49ad3c8d88cd43cda2731623fe2aec0b'
+
+
+cellContents =
+
+    '4ecbfd89393f4126aa1c951a2c23ef89'
+
+
+cellContents =
+
+    '50203cff83f848848346b91ef717d00e'
+
+
+cellContents =
+
+    '50515723b49542a98750e3da288bf6a3'
+
+
+cellContents =
+
+    '50a5970da0cb42518ab074ad0e94be9a'
+
+
+cellContents =
+
+    '5120615794cc47028247c98283b487aa'
+
+
+cellContents =
+
+    '51e5a835eb48464087d0f40f5e2bff18'
+
+
+cellContents =
+
+    '548423289432482089767964bf9bf147'
+
+
+cellContents =
+
+    '58c7e9c3134548c0a7580887358b8696'
+
+
+cellContents =
+
+    '5bebc389de0d45b89d2f6476988c358a'
+
+
+cellContents =
+
+    '5c156f6365374d93a6c24155618cf638'
+
+
+cellContents =
+
+    '5ecc88f783914168af1107a6bf9b3652'
+
+
+cellContents =
+
+    '603594e3e427494cb9eee872d6629563'
+
+
+cellContents =
+
+    '63d0c49d918d41fb808a1f8001981917'
+
+
+cellContents =
+
+    '6400c3242c94477dacb9669d4ea46f1e'
+
+
+cellContents =
+
+    '642e1379106140bc9a4cf7c191e84d9d'
+
+
+cellContents =
+
+    '64446aecc1254c81b9cc62482cb1aaed'
+
+
+cellContents =
+
+    '64f696a658b240a8b848fd775cd52529'
+
+
+cellContents =
+
+    '675a5a32b4054f03bfcd756343d1dfaf'
+
+
+cellContents =
+
+    '68b7fdb122b541529e69a41151640cd8'
+
+
+cellContents =
+
+    '6ba5f81ab7a04c18a1122e11094eec85'
+
+
+cellContents =
+
+    '6bd4bca3e5684d1b8b42401fdf13d751'
+
+
+cellContents =
+
+    '6d3551d6b5f44fd1b8d78e5931096c19'
+
+
+cellContents =
+
+    '7087a2b67fc445b08c48248864f03deb'
+
+
+cellContents =
+
+    '715f59dda80f422d988cf73f4b987baf'
+
+
+cellContents =
+
+    '72a2712424b941f7a065774fdf5f7d19'
+
+
+cellContents =
+
+    '741c46560fd0416e86c8f6533b6c96f4'
+
+
+cellContents =
+
+    '759e20be6a2b4c54aca06d358598d6f5'
+
+
+cellContents =
+
+    '7815397baa394b79bcaa6859a3f115f8'
+
+
+cellContents =
+
+    '79fa842320144536a1f9cb48aed3c45f'
+
+
+cellContents =
+
+    '7bd3d112d4114ea8a9a9bd965f0fc943'
+
+
+cellContents =
+
+    '81bb13fcf0824c0b80661729f11ef617'
+
+
+cellContents =
+
+    '81d0d6bb73194b67bcf736df24e76b43'
+
+
+cellContents =
+
+    '85422a8e25994daba257150e380ecba8'
+
+
+cellContents =
+
+    '85448d119f8444b78ae3a115f24bdb76'
+
+
+cellContents =
+
+    '85ed2434da94433390ca6ca4691cbdd3'
+
+
+cellContents =
+
+    '87e0b33260f34d598c4e691a820c9ee1'
+
+
+cellContents =
+
+    '88e35d25d98d45768ebe1cd74010ecd8'
+
+
+cellContents =
+
+    '8fa0484b5f954ec8b3decea2e8f3c5ca'
+
+
+cellContents =
+
+    '8fb7fcac6c1d40c29309b53821cbef30'
+
+
+cellContents =
+
+    '8fc7a4ccc25d4372bf172dae795e5596'
+
+
+cellContents =
+
+    '93b51c616eea4228a102840a2e118522'
+
+
+cellContents =
+
+    '944342724cbd4b4dbd9844f18526dd69'
+
+
+cellContents =
+
+    '959efb811d5646599b7a09f2b62483f2'
+
+
+cellContents =
+
+    '97c1a300978d4df19e97ce2f92b9eff1'
+
+
+cellContents =
+
+    '9a015939881048089dfafb60a1173bc7'
+
+
+cellContents =
+
+    '9a90f951ad964883b97fac43395dae5d'
+
+
+cellContents =
+
+    '9ae0744a9bc14cd7b7cfc6569ed9e4aa'
+
+
+cellContents =
+
+    '9c1813135b4c41c59ad5a5a86fe609aa'
+
+
+cellContents =
+
+    '9d3b0b875fc54d099c634d5fc4bc46d0'
+
+
+cellContents =
+
+    '9dfcbabf2bc043a2bdded0b2aaca3f6b'
+
+
+cellContents =
+
+    '9fb73d89f7c447b2810b3ce37cd8a3c9'
+
+
+cellContents =
+
+    '9fc0e0e81b0f400cb4cf126193283695'
+
+
+cellContents =
+
+    'a0eb26111ca644b7897ece18399eb7bc'
+
+
+cellContents =
+
+    'a2034620e4b54d4fac057fc1c098eb40'
+
+
+cellContents =
+
+    'a335b03d41ac4d41a2a93134b5b0a0a7'
+
+
+cellContents =
+
+    'a3deafcbb54f4b7e89acc92c16fb919f'
+
+
+cellContents =
+
+    'a441697c4ca04eab9b01b9cb50223ce2'
+
+
+cellContents =
+
+    'a4f8305f44094776b34d4878d18c8693'
+
+
+cellContents =
+
+    'a54aac0e410849cfbf50687031c7cda6'
+
+
+cellContents =
+
+    'a56cd282f6c54373b3d8676562894598'
+
+
+cellContents =
+
+    'a592e80a3b1a46aabe30bcd87d6bca6f'
+
+
+cellContents =
+
+    'a89a2341263d4e7f87fa18d9692d6b2b'
+
+
+cellContents =
+
+    'a9dbd55c5dcc48db87856baef3fdd7db'
+
+
+cellContents =
+
+    'aad8c8d6d8284aac9cfbcee893e36850'
+
+
+cellContents =
+
+    'ad9455e97147489e9b1f3540c457c260'
+
+
+cellContents =
+
+    'b19ec4cd28764a2bbcb9b3c8db54fc15'
+
+
+cellContents =
+
+    'b28f7607f162425fb44d64e9633c8824'
+
+
+cellContents =
+
+    'b30dfb8b82884e5aafc23d5bd7bfa26c'
+
+
+cellContents =
+
+    'b4f515ce5bee4e40a66a01f41e92181e'
+
+
+cellContents =
+
+    'b51fa1172c0a4e1d8ec49f039073a486'
+
+
+cellContents =
+
+    'b6365bdbe6d5461595b3db12a0c2f3d9'
+
+
+cellContents =
+
+    'b7fbd99cdea04448a4307f94c611e702'
+
+
+cellContents =
+
+    'b9d2e29e85464310aeeae029f17c0516'
+
+
+cellContents =
+
+    'ba67c02a180b43f3b53c2b77d84fbe3c'
+
+
+cellContents =
+
+    'ba68638681134885b20f6ad09a295604'
+
+
+cellContents =
+
+    'bb567851d4ff4a93857604a37aea68af'
+
+
+cellContents =
+
+    'bb659e7c0b9741b5ac10a66bb1f6f283'
+
+
+cellContents =
+
+    'bcf54c962b624e24926fd77576250dd1'
+
+
+cellContents =
+
+    'bd2cc59df5ce46edbeb04c80b24cbe71'
+
+
+cellContents =
+
+    'bd2ec47ba1204b3bb10daee09805ab33'
+
+
+cellContents =
+
+    'bef2319257cd4301b7a75e82ca62482d'
+
+
+cellContents =
+
+    'c00de7a00b094e07988cef2a7f8e932a'
+
+
+cellContents =
+
+    'c14407ad670e4d1e94172b76f4810fff'
+
+
+cellContents =
+
+    'c19a138895e64708a24c3738f1908071'
+
+
+cellContents =
+
+    'c298ec8283054c89898f268308f782b2'
+
+
+cellContents =
+
+    'c29f6ed6880d4f03977e1087738e5e60'
+
+
+cellContents =
+
+    'c2aafb9c230a43df9a43b34aa145a7bd'
+
+
+cellContents =
+
+    'c504d5a929b04b7eac7b5e543449a0f4'
+
+
+cellContents =
+
+    'c5bc082680374fe6ad4eb1b675e771fb'
+
+
+cellContents =
+
+    'c6d6f49e6e954e41838871f6fe017d80'
+
+
+cellContents =
+
+    'c8f64a71e5454eb69da32d43ae0c2627'
+
+
+cellContents =
+
+    'c9ad6b1cbaa045a7b7c4733728505b8a'
+
+
+cellContents =
+
+    'ca2b9fe297e04d4fafd7a5acf638800f'
+
+
+cellContents =
+
+    'cbb788dd964b4cfd80e1979c7b5b3c52'
+
+
+cellContents =
+
+    'cdf045a6ab6a4dc5b0b0d72fbb26b0bb'
+
+
+cellContents =
+
+    'cdf313c859f941c69bd2f47cb4287da5'
+
+
+cellContents =
+
+    'cf5deb22f7eb409da0e4882716199c39'
+
+
+cellContents =
+
+    'd01710f9efc84b5f9e53300b30f9219f'
+
+
+cellContents =
+
+    'd113ce8804ab4675b36392f80c28de34'
+
+
+cellContents =
+
+    'd2ab7fd4d1c748aeba9a78c5d811465e'
+
+
+cellContents =
+
+    'd429c27a596342feb3a07252c20669d8'
+
+
+cellContents =
+
+    'd4c6061b50194564806d4e75910a4690'
+
+
+cellContents =
+
+    'd5c87d16172f47908867949dcaa534d4'
+
+
+cellContents =
+
+    'd648c8044eaf42528b6f13378158a07d'
+
+
+cellContents =
+
+    'd72a7338c1444c62a70e2177a3b4b77e'
+
+
+cellContents =
+
+    'd8415cf68e4d4c54811e199da14237f1'
+
+
+cellContents =
+
+    'd926a39fd0574e788907b74f52157d99'
+
+
+cellContents =
+
+    'd991f23adc1b427ab798bd4187d3aa02'
+
+
+cellContents =
+
+    'dacd4cc2fc2b4fbdadf6c8a46ae69c91'
+
+
+cellContents =
+
+    'db4592fb13c24d619dc3a5d43def8d4b'
+
+
+cellContents =
+
+    'db4d1d0411894c0e99a7904667af07b5'
+
+
+cellContents =
+
+    'dddea2e4b8c341579d926de472e8375a'
+
+
+cellContents =
+
+    'de4c3f91d16447df9971feba840d247c'
+
+
+cellContents =
+
+    'deb0de92a46b4e71814c2f6c5e97dbcd'
+
+
+cellContents =
+
+    'decfb41963b347b09dfcbaae180566a0'
+
+
+cellContents =
+
+    'e053d377e4f24aeeaf7de61605e0f4f5'
+
+
+cellContents =
+
+    'e1217ebe182641a9b6c4702100a66f5e'
+
+
+cellContents =
+
+    'e5c89fcfcc574fada138ea47ee9ea225'
+
+
+cellContents =
+
+    'e6801359d1d74871b2fb180674a2e469'
+
+
+cellContents =
+
+    'e9032df386924146a867b9b64c9b310a'
+
+
+cellContents =
+
+    'ebe80d6c75134f5e9919669b6d1fa68c'
+
+
+cellContents =
+
+    'effb868cf90541a0ace1b5e508732534'
+
+
+cellContents =
+
+    'f03330ddc6164ad5abc36d6b0445e9e9'
+
+
+cellContents =
+
+    'f269134ae3d54020bcf501fb42f914b2'
+
+
+cellContents =
+
+    'f37971bdec6548408d4f678692cee695'
+
+
+cellContents =
+
+    'f38fc6ac2af84d89a5144e2c5fdf08de'
+
+
+cellContents =
+
+    'f3c1a12506e941c49558275a3e346cc5'
+
+
+cellContents =
+
+    'f4baf913c4ac46f383b6306b9182207d'
+
+
+cellContents =
+
+    'f64e9609d75d400ca92dd77fd54d6c29'
+
+
+cellContents =
+
+    'f6e758a5150f442490b71c1a34aec9a3'
+
+
+cellContents =
+
+    'f9a812005381496a8062099f9e793618'
+
+
+cellContents =
+
+    'fa5e290095e747009707a329cd0c77fd'
+
+
+cellContents =
+
+    'fae88d21171c4df4b2583c5948a1034b'
+
+
+cellContents =
+
+    'fb194ca310aa4dc58d08619ddbd6d1b6'
+
+
+cellContents =
+
+    'fbf937f15f30470c8a7746cd1c41e073'
+
+
+cellContents =
+
+    'fd74de4d69734597a541e8a13d80ad55'
+
+
+cellContents =
+
+    'fec30898f86b4207aa78de77142c8f50'
+
+Building n and N tables...
+Processing covariates...
+Finding bagels...  1000/16838 2000/16838 3000/16838 4000/16838 5000/16838 6000/16838 7000/16838 8000/16838 9000/16838 10000/16838 11000/16838 12000/16838 13000/16838 14000/16838 15000/16838 16000/16838 
+Expanding to (x,X)_gcp...
+Calculating p-value using 2D Projection method...  1000/16838 2000/16838 3000/16838 4000/16838 5000/16838 6000/16838 7000/16838 8000/16838 9000/16838 10000/16838 11000/16838 12000/16838 13000/16838 14000/16838 15000/16838 16000/16838 
+Done.  Wrote results to /storage/home/yur97/yur97/gitlab/pcawg-to-mutsigcv/mutsig_out/nsyn/out08262020/Kidney/Kidney.sig_genes.txt
+TIME USED FOR Kidney is 937.576824188
+
+======================================
+  MutSigCV
+  v1.4
+
+  (c) Mike Lawrence and Gaddy Getz
+  Broad Institute of MIT and Harvard
+======================================
+
+
+MutSigCV: PREPROCESS
+--------------------
+Loading mutation_file...
+Loading coverage file...
+Processing mutation "effect"...
+WARNING:  3302/46455 mutations could not be mapped to effect using mutation_type_dictionary_file:
+
+      lincRNA: [3302]
+    ----TOTAL: [3302]
+          They will be removed from the analysis.
+Processing mutation "categ"...
+Will use the categories already present.
+Writing preprocessed files.
+HUGE STRUCT: SAVING CHUNK 1/2
+  [save_struct] 16/41 17/41 18/41 19/41 20/41 21/41 22/41 23/41 24/41 25/41 26/41 27/41 28/41 29/41 30/41 31/41 32/41 33/41 34/41 35/41 36/41 37/41 38/41 39/41 40/41 41/41  [collapse]
+HUGE STRUCT: SAVING CHUNK 2/2
+  [save_struct] 33/41 34/41 35/41 36/41 37/41 38/41 39/41 40/41 41/41  [collapse]
+MutSig_preprocess finished.
+
+
+MutSigCV: RUN
+-------------
+Loading mutation_file...
+NOTE:  Both "gene" and "Hugo_Symbol" are present in mutation_file.  Using "gene".
+NOTE:  Both "patient" and "Tumor_Sample_Barcode" are present in mutation_file.  Using "patient".
+Loading coverage file...
+Loading covariate file...
+NOTE:  2251/8000 gene names could not be mapped to coverage information.  Excluding them.
+NOTE:  Converting "-" to "_" in patient names.
+
+cellContents =
+
+    '1c300960e51c44778fdd026c7e545dc4'
+
+
+cellContents =
+
+    '335c721a3653471fb0ec6144fe868c6a'
+
+
+cellContents =
+
+    '4ceeb0252f164f80b9b40151346349c6'
+
+
+cellContents =
+
+    '58e2453cbb5843a39642705ec0e0bdbd'
+
+
+cellContents =
+
+    '9f29880677b64c76bd383343e1a3c6f0'
+
+
+cellContents =
+
+    'a68389d4431f4582b4dfe8ad200aa3be'
+
+
+cellContents =
+
+    'aff5793b31974d1dbf0a9b0ded5f2937'
+
+
+cellContents =
+
+    'f8e61a026e5ec8e2e04011ac0d481b70'
+
+
+cellContents =
+
+    'f8e61a02909da906e04011ac0d481b6e'
+
+
+cellContents =
+
+    'f8e61a0292b1947ee04011ac0d481b68'
+
+
+cellContents =
+
+    'f8e61a0642fae42ce04011ac0d481b72'
+
+
+cellContents =
+
+    'f8f0136b09ecd079e04011ac0c4842e7'
+
+
+cellContents =
+
+    'f8f079892e2e30f3e04011ac0d484490'
+
+
+cellContents =
+
+    'f8f0a4231a3e4fcce04011ac0c481cb6'
+
+
+cellContents =
+
+    'f8f61e36b9349410e04011ac0c4804cc'
+
+
+cellContents =
+
+    'f8fae6e593b57233e04011ac0c4830e7'
+
+
+cellContents =
+
+    'f8fb791c08b4b6e1e04011ac0d4868f3'
+
+
+cellContents =
+
+    'f901c7f7891e8ec1e04011ac0c480829'
+
+
+cellContents =
+
+    'f9031d03def124b4e04011ac0c486570'
+
+
+cellContents =
+
+    'f9039bd68fa637cbe04011ac0d486d06'
+
+
+cellContents =
+
+    'f90cab096797eccbe04011ac0d486aa3'
+
+
+cellContents =
+
+    'f90d51f83bc42e66e04011ac0d484d19'
+
+
+cellContents =
+
+    'f90f82044d6504fae04011ac0c4841bb'
+
+
+cellContents =
+
+    'f9116dda19f49e1be04011ac0c4872b8'
+
+
+cellContents =
+
+    'f91ba7485a05e738e04011ac0c486a08'
+
+
+cellContents =
+
+    'f91bde65233d2218e04011ac0c480a33'
+
+
+cellContents =
+
+    'f920200ef3493730e04011ac0d4825cc'
+
+
+cellContents =
+
+    'f92268fe7a9251e8e04011ac0d48733a'
+
+
+cellContents =
+
+    'f926087f0bec1316e04011ac0c480a58'
+
+
+cellContents =
+
+    'f92a78d190ff70c8e04011ac0d485eca'
+
+
+cellContents =
+
+    'f92b8fda350b17d5e04011ac0c480ce8'
+
+
+cellContents =
+
+    'f92fde516a196641e04011ac0c484074'
+
+
+cellContents =
+
+    'f938b6f4a457c624e04011ac0c486fad'
+
+
+cellContents =
+
+    'f93abbbf5e139b85e04011ac0d485718'
+
+
+cellContents =
+
+    'f93f44456f19403ce04011ac0d48556f'
+
+
+cellContents =
+
+    'f940cea27e79e422e04011ac0d483224'
+
+
+cellContents =
+
+    'fa718a697d09424b90a34839ba7dc9b2'
+
+Building n and N tables...
+Processing covariates...
+Finding bagels...  1000/16838 2000/16838 3000/16838 4000/16838 5000/16838 6000/16838 7000/16838 8000/16838 9000/16838 10000/16838 11000/16838 12000/16838 13000/16838 14000/16838 15000/16838 16000/16838 
+Expanding to (x,X)_gcp...
+Calculating p-value using 2D Projection method...  1000/16838 2000/16838 3000/16838 4000/16838 5000/16838 6000/16838 7000/16838 8000/16838 9000/16838 10000/16838 11000/16838 12000/16838 13000/16838 14000/16838 15000/16838 16000/16838 
+Done.  Wrote results to /storage/home/yur97/yur97/gitlab/pcawg-to-mutsigcv/mutsig_out/nsyn/out08262020/Myeloid/Myeloid.sig_genes.txt
+TIME USED FOR Myeloid is 166.37638402
+
+======================================
+  MutSigCV
+  v1.4
+
+  (c) Mike Lawrence and Gaddy Getz
+  Broad Institute of MIT and Harvard
+======================================
+
+
+MutSigCV: PREPROCESS
+--------------------
+Loading mutation_file...
+Loading coverage file...
+Processing mutation "effect"...
+WARNING:  135219/1861968 mutations could not be mapped to effect using mutation_type_dictionary_file:
+
+    Start_Codon_SNP: [18]
+            lincRNA: [135201]
+          ----TOTAL: [135219]
+          They will be removed from the analysis.
+Processing mutation "categ"...
+Will use the categories already present.
+Writing preprocessed files.
+HUGE STRUCT: SAVING CHUNK 1/9
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 2/9
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 3/9
+  [save_struct] 14/50 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 4/9
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 5/9
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 6/9
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 7/9
+  [save_struct] 14/50 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 8/9
+  [save_struct] 14/50 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 9/9
+  [save_struct] 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 1/3
+  [save_struct] 27/71 28/71 29/71 30/71 31/71 32/71 33/71 34/71 35/71 36/71 37/71 38/71 39/71 40/71 41/71 42/71 43/71 44/71 45/71 46/71 47/71 48/71 49/71 50/71 51/71 52/71 53/71 54/71 55/71 56/71 57/71 58/71 59/71 60/71 61/71 62/71 63/71 64/71 65/71 66/71 67/71 68/71 69/71 70/71 71/71  [collapse]
+HUGE STRUCT: SAVING CHUNK 2/3
+  [save_struct] 29/71 30/71 31/71 32/71 33/71 34/71 35/71 36/71 37/71 38/71 39/71 40/71 41/71 42/71 43/71 44/71 45/71 46/71 47/71 48/71 49/71 50/71 51/71 52/71 53/71 54/71 55/71 56/71 57/71 58/71 59/71 60/71 61/71 62/71 63/71 64/71 65/71 66/71 67/71 68/71 69/71 70/71 71/71  [collapse]
+HUGE STRUCT: SAVING CHUNK 3/3
+  [save_struct] 52/71 53/71 54/71 55/71 56/71 57/71 58/71 59/71 60/71 61/71 62/71 63/71 64/71 65/71 66/71 67/71 68/71 69/71 70/71 71/71  [collapse]
+MutSig_preprocess finished.
+
+
+MutSigCV: RUN
+-------------
+Loading mutation_file...
+NOTE:  Both "gene" and "Hugo_Symbol" are present in mutation_file.  Using "gene".
+NOTE:  Both "patient" and "Tumor_Sample_Barcode" are present in mutation_file.  Using "patient".
+Loading coverage file...
+Loading covariate file...
+NOTE:  8619/24581 gene names could not be mapped to coverage information.  Excluding them.
+NOTE:  Converting "-" to "_" in patient names.
+
+cellContents =
+
+    '08d2a56684074e9b836cbf5e1e9f85b2'
+
+
+cellContents =
+
+    '0cd60b96eb2d46879709d1455ec45de7'
+
+
+cellContents =
+
+    '0e54cea2d5684a33b9dbb698844e6ad9'
+
+
+cellContents =
+
+    '0fa9cfba0f4947d0ab549dd2144e0a73'
+
+
+cellContents =
+
+    '1021b60df7b243b0b2ccf282d619d533'
+
+
+cellContents =
+
+    '153a64ee63224f2eb3df77ef7d3a4cf0'
+
+
+cellContents =
+
+    '172c9864c26d4e9b947ae8ce761e996d'
+
+
+cellContents =
+
+    '1a391468fbf3451ab88ea257a26d047f'
+
+
+cellContents =
+
+    '1b8fe07d859c4d91ade16b2bcb5774ce'
+
+
+cellContents =
+
+    '1d2d355a84094c8a9f07ac62885e228d'
+
+
+cellContents =
+
+    '1f2a888943744037bb560f20733380e3'
+
+
+cellContents =
+
+    '25f07374313a41009a603d21d2988fca'
+
+
+cellContents =
+
+    '2c316b7e6a824ba19f34d8bfcf82d41e'
+
+
+cellContents =
+
+    '2e66eb75097c4ad8b2b39f5849dfd02f'
+
+
+cellContents =
+
+    '30b9ab0260f2497485a9874f247ae932'
+
+
+cellContents =
+
+    '34a445c21eb44a9f8838cddc2f82aae4'
+
+
+cellContents =
+
+    '37e5d47b851b47deba6afd2835644011'
+
+
+cellContents =
+
+    '388a8875c3f5494e845628be8d3626e1'
+
+
+cellContents =
+
+    '3db3b7b1da1d4b9ca92ac60fecf4328c'
+
+
+cellContents =
+
+    '429aad6f816d4739baa3b0ebf2fcd501'
+
+
+cellContents =
+
+    '498ecf81921d4df9a6a4a625f484e823'
+
+
+cellContents =
+
+    '4dc9b0327f7b486da12b8461af89501d'
+
+
+cellContents =
+
+    '576a17418c6540da9f0fb2ca805d70f3'
+
+
+cellContents =
+
+    '5c4b369c51a34ca78b9d2a8e49c0dde7'
+
+
+cellContents =
+
+    '5dc6f055c4f649a1a68c94cf87cbd363'
+
+
+cellContents =
+
+    '61cad26acbc6497783b9dc61e49f2861'
+
+
+cellContents =
+
+    '622eaa04b8f9471b98b07befd119f14c'
+
+
+cellContents =
+
+    '63f5bb121b2049d49e98570e368f947d'
+
+
+cellContents =
+
+    '65be412d46c34cbf9b46b35351e53065'
+
+
+cellContents =
+
+    '68509ede3dcf4a6e9af04a9bb4dfa567'
+
+
+cellContents =
+
+    '6a7cdaf6211e4eb8a70e1153d69c45e4'
+
+
+cellContents =
+
+    '6dac8ca0f7764ea285c4aefba4966be7'
+
+
+cellContents =
+
+    '6dbac113d4cf4db597c950fa400bb47e'
+
+
+cellContents =
+
+    '7116cc90f4654e7eaa2748a83ed258e9'
+
+
+cellContents =
+
+    '7b482f46adcc48aea4d617f4edd998dc'
+
+
+cellContents =
+
+    '7e036d40b6694929a1e2c4736e01a473'
+
+
+cellContents =
+
+    '7e305f31fbb04bce894b1dd85e303421'
+
+
+cellContents =
+
+    '7eb0f792858f45d1a908125b02ea1506'
+
+
+cellContents =
+
+    '81c7a8c18a6a4e78a72cf7c021c67ff7'
+
+
+cellContents =
+
+    '8867bdef3a8d433eb10fd752e2cbb022'
+
+
+cellContents =
+
+    '931b24da5d6d4c2d8de9ef32d6eb8565'
+
+
+cellContents =
+
+    '9536f73663bc4099bd54740f5910f4a8'
+
+
+cellContents =
+
+    'a2e6739350d74bcc9bbdc695086a936a'
+
+
+cellContents =
+
+    'a2ee5dde43424e7888c53c9a8e10cbf5'
+
+
+cellContents =
+
+    'a46f1e209e974dcca5ed532aad9f3236'
+
+
+cellContents =
+
+    'a4c838df6ac4455a80968ec680064374'
+
+
+cellContents =
+
+    'b49d53103cc543869444cf0d61b52376'
+
+
+cellContents =
+
+    'bc0dee07de2044d6be6505af7e63ac96'
+
+
+cellContents =
+
+    'bd2f81333e714c5e998f0c1a9fdfb75f'
+
+
+cellContents =
+
+    'c1b449660f724c4f8783ab3ffe7f17b2'
+
+
+cellContents =
+
+    'c4e048de1d434fbd82899279b16c8a3a'
+
+
+cellContents =
+
+    'c612570a881d421f98b90e4563133744'
+
+
+cellContents =
+
+    'c79ce3d347584f529da138f994c99f4e'
+
+
+cellContents =
+
+    'c8e961b4e32440a289f6736ec3845bc9'
+
+
+cellContents =
+
+    'd6738c837b524224846a67bd085aaab8'
+
+
+cellContents =
+
+    'd7f8e1f3a9a7492992df1283bac815d2'
+
+
+cellContents =
+
+    'd8d5585d32cd4ac4b410a4122a17a558'
+
+
+cellContents =
+
+    'd91e1a92837d44d692d8419f435effe0'
+
+
+cellContents =
+
+    'dc537fcfd9104c4b8af9e7da429f2633'
+
+
+cellContents =
+
+    'ea1cac2088c142579cdbd2890eb2e123'
+
+
+cellContents =
+
+    'ea2055d17b8b4aaf9a708802f4deef9b'
+
+
+cellContents =
+
+    'eb18e71d2a274eaeaa274b2c0716d2ba'
+
+
+cellContents =
+
+    'eb59b79fbd364bf483e32af73bd1d30a'
+
+
+cellContents =
+
+    'eda1d8d9e8f546f2bb1615d0b10c2cf9'
+
+
+cellContents =
+
+    'edc8839ffa6b41e0ad49f688073730bd'
+
+
+cellContents =
+
+    'f50fb2781f0f406eb341eb3d1b97afe6'
+
+
+cellContents =
+
+    'feccee20a62d4152b832b9fdaca87a61'
+
+Building n and N tables...
+Processing covariates...
+Finding bagels...  1000/16838 2000/16838 3000/16838 4000/16838 5000/16838 6000/16838 7000/16838 8000/16838 9000/16838 10000/16838 11000/16838 12000/16838 13000/16838 14000/16838 15000/16838 16000/16838 
+Expanding to (x,X)_gcp...
+Calculating p-value using 2D Projection method...  1000/16838 2000/16838 3000/16838 4000/16838 5000/16838 6000/16838 7000/16838 8000/16838 9000/16838 10000/16838 11000/16838 12000/16838 13000/16838 14000/16838 15000/16838 16000/16838 
+Done.  Wrote results to /storage/home/yur97/yur97/gitlab/pcawg-to-mutsigcv/mutsig_out/nsyn/out08262020/Stomach/Stomach.sig_genes.txt
+TIME USED FOR Stomach is 884.172813177
+
+======================================
+  MutSigCV
+  v1.4
+
+  (c) Mike Lawrence and Gaddy Getz
+  Broad Institute of MIT and Harvard
+======================================
+
+
+MutSigCV: PREPROCESS
+--------------------
+Loading mutation_file...
+Loading coverage file...
+Processing mutation "effect"...
+WARNING:  49355/697540 mutations could not be mapped to effect using mutation_type_dictionary_file:
+
+    Start_Codon_SNP: [9]
+            lincRNA: [49346]
+          ----TOTAL: [49355]
+          They will be removed from the analysis.
+Processing mutation "categ"...
+Will use the categories already present.
+Writing preprocessed files.
+HUGE STRUCT: SAVING CHUNK 1/4
+  [save_struct] 14/50 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 2/4
+  [save_struct] 14/50 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 3/4
+  [save_struct] 14/50 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 4/4
+HUGE STRUCT: SAVING CHUNK 1/8
+  [save_struct] 63/202 64/202 65/202 66/202 67/202 68/202 69/202 70/202 71/202 72/202 73/202 74/202 75/202 76/202 77/202 78/202 79/202 80/202 81/202 82/202 83/202 84/202 85/202 86/202 87/202 88/202 89/202 90/202 91/202 92/202 93/202 94/202 95/202 96/202 97/202 98/202 99/202 100/202 101/202 102/202 103/202 104/202 105/202 106/202 107/202 108/202 109/202 110/202 111/202 112/202 113/202 114/202 115/202 116/202 117/202 118/202 119/202 120/202 121/202 122/202 123/202 124/202 125/202 126/202 127/202 128/202 129/202 130/202 131/202 132/202 133/202 134/202 135/202 136/202 137/202 138/202 139/202 140/202 141/202 142/202 143/202 144/202 145/202 146/202 147/202 148/202 149/202 150/202 151/202 152/202 153/202 154/202 155/202 156/202 157/202 158/202 159/202 160/202 161/202 162/202 163/202 164/202 165/202 166/202 167/202 168/202 169/202 170/202 171/202 172/202 173/202 174/202 175/202 176/202 177/202 178/202 179/202 180/202 181/202 182/202 183/202 184/202 185/202 186/202 187/202 188/202 189/202 190/202 191/202 192/202 193/202 194/202 195/202 196/202 197/202 198/202 199/202 200/202 201/202 202/202  [collapse]
+HUGE STRUCT: SAVING CHUNK 2/8
+  [save_struct] 72/202 73/202 74/202 75/202 76/202 77/202 78/202 79/202 80/202 81/202 82/202 83/202 84/202 85/202 86/202 87/202 88/202 89/202 90/202 91/202 92/202 93/202 94/202 95/202 96/202 97/202 98/202 99/202 100/202 101/202 102/202 103/202 104/202 105/202 106/202 107/202 108/202 109/202 110/202 111/202 112/202 113/202 114/202 115/202 116/202 117/202 118/202 119/202 120/202 121/202 122/202 123/202 124/202 125/202 126/202 127/202 128/202 129/202 130/202 131/202 132/202 133/202 134/202 135/202 136/202 137/202 138/202 139/202 140/202 141/202 142/202 143/202 144/202 145/202 146/202 147/202 148/202 149/202 150/202 151/202 152/202 153/202 154/202 155/202 156/202 157/202 158/202 159/202 160/202 161/202 162/202 163/202 164/202 165/202 166/202 167/202 168/202 169/202 170/202 171/202 172/202 173/202 174/202 175/202 176/202 177/202 178/202 179/202 180/202 181/202 182/202 183/202 184/202 185/202 186/202 187/202 188/202 189/202 190/202 191/202 192/202 193/202 194/202 195/202 196/202 197/202 198/202 199/202 200/202 201/202 202/202  [collapse]
+HUGE STRUCT: SAVING CHUNK 3/8
+  [save_struct] 71/202 72/202 73/202 74/202 75/202 76/202 77/202 78/202 79/202 80/202 81/202 82/202 83/202 84/202 85/202 86/202 87/202 88/202 89/202 90/202 91/202 92/202 93/202 94/202 95/202 96/202 97/202 98/202 99/202 100/202 101/202 102/202 103/202 104/202 105/202 106/202 107/202 108/202 109/202 110/202 111/202 112/202 113/202 114/202 115/202 116/202 117/202 118/202 119/202 120/202 121/202 122/202 123/202 124/202 125/202 126/202 127/202 128/202 129/202 130/202 131/202 132/202 133/202 134/202 135/202 136/202 137/202 138/202 139/202 140/202 141/202 142/202 143/202 144/202 145/202 146/202 147/202 148/202 149/202 150/202 151/202 152/202 153/202 154/202 155/202 156/202 157/202 158/202 159/202 160/202 161/202 162/202 163/202 164/202 165/202 166/202 167/202 168/202 169/202 170/202 171/202 172/202 173/202 174/202 175/202 176/202 177/202 178/202 179/202 180/202 181/202 182/202 183/202 184/202 185/202 186/202 187/202 188/202 189/202 190/202 191/202 192/202 193/202 194/202 195/202 196/202 197/202 198/202 199/202 200/202 201/202 202/202  [collapse]
+HUGE STRUCT: SAVING CHUNK 4/8
+  [save_struct] 74/202 75/202 76/202 77/202 78/202 79/202 80/202 81/202 82/202 83/202 84/202 85/202 86/202 87/202 88/202 89/202 90/202 91/202 92/202 93/202 94/202 95/202 96/202 97/202 98/202 99/202 100/202 101/202 102/202 103/202 104/202 105/202 106/202 107/202 108/202 109/202 110/202 111/202 112/202 113/202 114/202 115/202 116/202 117/202 118/202 119/202 120/202 121/202 122/202 123/202 124/202 125/202 126/202 127/202 128/202 129/202 130/202 131/202 132/202 133/202 134/202 135/202 136/202 137/202 138/202 139/202 140/202 141/202 142/202 143/202 144/202 145/202 146/202 147/202 148/202 149/202 150/202 151/202 152/202 153/202 154/202 155/202 156/202 157/202 158/202 159/202 160/202 161/202 162/202 163/202 164/202 165/202 166/202 167/202 168/202 169/202 170/202 171/202 172/202 173/202 174/202 175/202 176/202 177/202 178/202 179/202 180/202 181/202 182/202 183/202 184/202 185/202 186/202 187/202 188/202 189/202 190/202 191/202 192/202 193/202 194/202 195/202 196/202 197/202 198/202 199/202 200/202 201/202 202/202  [collapse]
+HUGE STRUCT: SAVING CHUNK 5/8
+  [save_struct] 84/202 85/202 86/202 87/202 88/202 89/202 90/202 91/202 92/202 93/202 94/202 95/202 96/202 97/202 98/202 99/202 100/202 101/202 102/202 103/202 104/202 105/202 106/202 107/202 108/202 109/202 110/202 111/202 112/202 113/202 114/202 115/202 116/202 117/202 118/202 119/202 120/202 121/202 122/202 123/202 124/202 125/202 126/202 127/202 128/202 129/202 130/202 131/202 132/202 133/202 134/202 135/202 136/202 137/202 138/202 139/202 140/202 141/202 142/202 143/202 144/202 145/202 146/202 147/202 148/202 149/202 150/202 151/202 152/202 153/202 154/202 155/202 156/202 157/202 158/202 159/202 160/202 161/202 162/202 163/202 164/202 165/202 166/202 167/202 168/202 169/202 170/202 171/202 172/202 173/202 174/202 175/202 176/202 177/202 178/202 179/202 180/202 181/202 182/202 183/202 184/202 185/202 186/202 187/202 188/202 189/202 190/202 191/202 192/202 193/202 194/202 195/202 196/202 197/202 198/202 199/202 200/202 201/202 202/202  [collapse]
+HUGE STRUCT: SAVING CHUNK 6/8
+  [save_struct] 76/202 77/202 78/202 79/202 80/202 81/202 82/202 83/202 84/202 85/202 86/202 87/202 88/202 89/202 90/202 91/202 92/202 93/202 94/202 95/202 96/202 97/202 98/202 99/202 100/202 101/202 102/202 103/202 104/202 105/202 106/202 107/202 108/202 109/202 110/202 111/202 112/202 113/202 114/202 115/202 116/202 117/202 118/202 119/202 120/202 121/202 122/202 123/202 124/202 125/202 126/202 127/202 128/202 129/202 130/202 131/202 132/202 133/202 134/202 135/202 136/202 137/202 138/202 139/202 140/202 141/202 142/202 143/202 144/202 145/202 146/202 147/202 148/202 149/202 150/202 151/202 152/202 153/202 154/202 155/202 156/202 157/202 158/202 159/202 160/202 161/202 162/202 163/202 164/202 165/202 166/202 167/202 168/202 169/202 170/202 171/202 172/202 173/202 174/202 175/202 176/202 177/202 178/202 179/202 180/202 181/202 182/202 183/202 184/202 185/202 186/202 187/202 188/202 189/202 190/202 191/202 192/202 193/202 194/202 195/202 196/202 197/202 198/202 199/202 200/202 201/202 202/202  [collapse]
+HUGE STRUCT: SAVING CHUNK 7/8
+  [save_struct] 73/202 74/202 75/202 76/202 77/202 78/202 79/202 80/202 81/202 82/202 83/202 84/202 85/202 86/202 87/202 88/202 89/202 90/202 91/202 92/202 93/202 94/202 95/202 96/202 97/202 98/202 99/202 100/202 101/202 102/202 103/202 104/202 105/202 106/202 107/202 108/202 109/202 110/202 111/202 112/202 113/202 114/202 115/202 116/202 117/202 118/202 119/202 120/202 121/202 122/202 123/202 124/202 125/202 126/202 127/202 128/202 129/202 130/202 131/202 132/202 133/202 134/202 135/202 136/202 137/202 138/202 139/202 140/202 141/202 142/202 143/202 144/202 145/202 146/202 147/202 148/202 149/202 150/202 151/202 152/202 153/202 154/202 155/202 156/202 157/202 158/202 159/202 160/202 161/202 162/202 163/202 164/202 165/202 166/202 167/202 168/202 169/202 170/202 171/202 172/202 173/202 174/202 175/202 176/202 177/202 178/202 179/202 180/202 181/202 182/202 183/202 184/202 185/202 186/202 187/202 188/202 189/202 190/202 191/202 192/202 193/202 194/202 195/202 196/202 197/202 198/202 199/202 200/202 201/202 202/202  [collapse]
+HUGE STRUCT: SAVING CHUNK 8/8
+MutSig_preprocess finished.
+
+
+MutSigCV: RUN
+-------------
+Loading mutation_file...
+NOTE:  Both "gene" and "Hugo_Symbol" are present in mutation_file.  Using "gene".
+NOTE:  Both "patient" and "Tumor_Sample_Barcode" are present in mutation_file.  Using "patient".
+Loading coverage file...
+Loading covariate file...
+NOTE:  7233/22025 gene names could not be mapped to coverage information.  Excluding them.
+NOTE:  Converting "-" to "_" in patient names.
+
+cellContents =
+
+    '005e85a33571462d8dc92babfc7ace21'
+
+
+cellContents =
+
+    '008aef390c9748ce9dfdf12d67116c59'
+
+
+cellContents =
+
+    '008bad10d41b4bbb86fa9976ecea46b1'
+
+
+cellContents =
+
+    '0192d529734045d8a5f0249cbb11ca19'
+
+
+cellContents =
+
+    '07f1639771bb4594ad4dcaa7d2baeabd'
+
+
+cellContents =
+
+    '089be98dc3c94fb4aef27a8578a91d51'
+
+
+cellContents =
+
+    '08e1d9766c39428ea4c2f655b675683e'
+
+
+cellContents =
+
+    '0a6be23ad5a04e95ada2a61b2b5d9485'
+
+
+cellContents =
+
+    '0bfd104370fbd2dce05011ac0c4860cb'
+
+
+cellContents =
+
+    '0bfd10438170e3e4e05011ac0c4860c5'
+
+
+cellContents =
+
+    '0bfd10438177e3e4e05011ac0c4860c5'
+
+
+cellContents =
+
+    '0bfd10438181e3e4e05011ac0c4860c5'
+
+
+cellContents =
+
+    '0bfd10438183e3e4e05011ac0c4860c5'
+
+
+cellContents =
+
+    '0bfd10438187e3e4e05011ac0c4860c5'
+
+
+cellContents =
+
+    '0bfd10683fc5a95be05011ac0c4860c3'
+
+
+cellContents =
+
+    '0bfd10683fcfa95be05011ac0c4860c3'
+
+
+cellContents =
+
+    '0bfd10683fd3a95be05011ac0c4860c3'
+
+
+cellContents =
+
+    '0bfd10683fd8a95be05011ac0c4860c3'
+
+
+cellContents =
+
+    '0c9a5dbcf7f343e783d177b9fb4b8b54'
+
+
+cellContents =
+
+    '0cb4356cb5d64541b048ff6d4b3a5d26'
+
+
+cellContents =
+
+    '0ed2e2e12fe343eb8cad34f3f21a7169'
+
+
+cellContents =
+
+    '108b67d45d6646da86756acae643b76f'
+
+
+cellContents =
+
+    '120f01d188844acaa1cb36b207b2aa3a'
+
+
+cellContents =
+
+    '122bf0a9805249daa9d70e5de9ab7032'
+
+
+cellContents =
+
+    '126ee433d3454cac882ac91831a24690'
+
+
+cellContents =
+
+    '131332b2ff514bd7a626aff2ecea6135'
+
+
+cellContents =
+
+    '145f2b8988784390b0f6f09b02fb138a'
+
+
+cellContents =
+
+    '186cacaf4f204ad2a07aa7dc942a70b0'
+
+
+cellContents =
+
+    '1a319682f55e4e0b847648a0bea6c265'
+
+
+cellContents =
+
+    '1bbfe6f2ad194d29895b973f5a91c707'
+
+
+cellContents =
+
+    '1be81ade7ad64e7e90d0f986b3fb0a25'
+
+
+cellContents =
+
+    '1d91f9c767ba46069f0a01ec6fc08262'
+
+
+cellContents =
+
+    '1dd964955f834d3696cfb77cd0cbbfda'
+
+
+cellContents =
+
+    '1eb37b28fac2477a88b3e04291a07926'
+
+
+cellContents =
+
+    '1f04210a0c2e4bb8ac8e86198e5f1d34'
+
+
+cellContents =
+
+    '1f5e70c1c5de49e7941a46e11a4f4416'
+
+
+cellContents =
+
+    '25c002f7e972421ab32d7dd675d81931'
+
+
+cellContents =
+
+    '289790a577bd49a9a1ec478a8ecacd7f'
+
+
+cellContents =
+
+    '2c9c50ff01d94703931b04119178706f'
+
+
+cellContents =
+
+    '2ea2294dfab943aea222370487495b06'
+
+
+cellContents =
+
+    '304c3e10583c421dab0115c937d5014a'
+
+
+cellContents =
+
+    '306ef5bc97d04312ae0e343c4e31d869'
+
+
+cellContents =
+
+    '32d8c373b5c8420b98088812b5501649'
+
+
+cellContents =
+
+    '35553150e4ef4539b220259f2d634bd7'
+
+
+cellContents =
+
+    '36962459e81f4b8ca08ddf60ef3283a3'
+
+
+cellContents =
+
+    '39aee9fcfa274b71b9e843ff34bd3930'
+
+
+cellContents =
+
+    '39e3261501604f13b33050748f5d87ed'
+
+
+cellContents =
+
+    '3c92c0e968e043548ed1b6506878145d'
+
+
+cellContents =
+
+    '3e7a30e6220240bdbfc10383604050da'
+
+
+cellContents =
+
+    '3e86e68bd0834450b0564cd0f8d4a084'
+
+
+cellContents =
+
+    '41027c0b85af4c78bba00da63cd75fa9'
+
+
+cellContents =
+
+    '41c565a9d44a447f85c098f23bfee1b3'
+
+
+cellContents =
+
+    '42a548f0d86a42738bdabe0fe6a53b20'
+
+
+cellContents =
+
+    '43b675e022e042d6a060afc93e22ac95'
+
+
+cellContents =
+
+    '44083f54095348e3a70411ad0988ad2e'
+
+
+cellContents =
+
+    '4508ce0a5a2e450298e92fd76c4eebef'
+
+
+cellContents =
+
+    '45d0ccb2641f4348b3a861f4113cd85b'
+
+
+cellContents =
+
+    '475bca0090894f5086384e5e8aca6dcd'
+
+
+cellContents =
+
+    '48c33a30557b4ecf80665b4b068b5e3a'
+
+
+cellContents =
+
+    '4b44b3136f744233bec47e41c91c77f1'
+
+
+cellContents =
+
+    '4c5228b5bf314abda47cd088e16dba13'
+
+
+cellContents =
+
+    '4eac784b084a41069a762d9fbec57033'
+
+
+cellContents =
+
+    '51adf6cff4224d7eaa46cc9bf0ef8693'
+
+
+cellContents =
+
+    '54319e3dc28f4ba19c87299d303e4de3'
+
+
+cellContents =
+
+    '551d5082ab6a4674af0dce408f589949'
+
+
+cellContents =
+
+    '581be6cf977849c39c771316eaa78929'
+
+
+cellContents =
+
+    '597e4011ea994356b1d98cfe35db7c3b'
+
+
+cellContents =
+
+    '59938f453e5743d6af3bbb4968249e5a'
+
+
+cellContents =
+
+    '59c186948a4341dda6f652a20bc8dd54'
+
+
+cellContents =
+
+    '5c8da06c79644ad1ac9ed1b5507105d2'
+
+
+cellContents =
+
+    '5d6ad982bb014233b8fad129460eec79'
+
+
+cellContents =
+
+    '619735784c0d4a3fb9c4f96ceab24629'
+
+
+cellContents =
+
+    '61a48c694f7d4dc6aff788a6c33137df'
+
+
+cellContents =
+
+    '61d941f187df43af8a29b6809c809275'
+
+
+cellContents =
+
+    '6218f366d5d24289a95eeeedfae7523a'
+
+
+cellContents =
+
+    '62ea126447b64a6b9fa6779837f8e905'
+
+
+cellContents =
+
+    '6763f295f2bf4975bea5c1a490d9a1fa'
+
+
+cellContents =
+
+    '6947cd780a5149498383343f9122d953'
+
+
+cellContents =
+
+    '69dbe6eff5de4c1fb2f2963dcb6ccd3e'
+
+
+cellContents =
+
+    '6d0851ba271a408fbcc3c104b452c9e5'
+
+
+cellContents =
+
+    '6d325c968f5c406498064364016da8a4'
+
+
+cellContents =
+
+    '6d936ef9b5df44d3831f528bf8ddc131'
+
+
+cellContents =
+
+    '6f25ca854b4a420fb0cc5a4f65a97da3'
+
+
+cellContents =
+
+    '6fe135ef54b449419bb9872dc4d18d9f'
+
+
+cellContents =
+
+    '7181dd1013714cb69219a9542c62b854'
+
+
+cellContents =
+
+    '7303f9fe88bb48bab9b4ebf9e4770c1c'
+
+
+cellContents =
+
+    '734a82519ecc47f5835f846b67693ca6'
+
+
+cellContents =
+
+    '73f7718bf9b14a63a5610c9cc2abeb9f'
+
+
+cellContents =
+
+    '769e2ac9a1214b2aa0fd5f755b579811'
+
+
+cellContents =
+
+    '783579bde29d457c82361a80b557600c'
+
+
+cellContents =
+
+    '79914ce904d84b0d9f162e528044966e'
+
+
+cellContents =
+
+    '7a95af21ca7c45969c8366d11ca0c417'
+
+
+cellContents =
+
+    '7ae9b843488f459c8c0dc81dcae57f99'
+
+
+cellContents =
+
+    '7d6fb1a777424b8c9903abff706240b5'
+
+
+cellContents =
+
+    '7dd2dc620eb44d4586f1e9e9377181ca'
+
+
+cellContents =
+
+    '7e4d570ef26b41fb84c52a6f7d668bb5'
+
+
+cellContents =
+
+    '7fe96e71436d49d49e47e104e1203568'
+
+
+cellContents =
+
+    '8044a282bc2c47c68a8553c3b5eeb08f'
+
+
+cellContents =
+
+    '836ec5a5e385423683e72641ee35db7f'
+
+
+cellContents =
+
+    '84ae4dd8f66146aa989269742e2f3542'
+
+
+cellContents =
+
+    '86874a67aa8645f1be323b2722ebedec'
+
+
+cellContents =
+
+    '8689b53c8883479c85f6d13b86272b5d'
+
+
+cellContents =
+
+    '87e1ffeea8cd4d75937eed415cf43546'
+
+
+cellContents =
+
+    '887616c506a74e83948c3546202349fb'
+
+
+cellContents =
+
+    '8930735a4eb444898513d4b600c316ab'
+
+
+cellContents =
+
+    '8a9359deb0ad4a2da543e3b982697db9'
+
+
+cellContents =
+
+    '8bbe4006be0a4cd591f6529100d4f06e'
+
+
+cellContents =
+
+    '8c0a7dfa6ec34262b718c3605722df37'
+
+
+cellContents =
+
+    '8c850df7d48e4386b3a5cac5da865ea5'
+
+
+cellContents =
+
+    '8e7fe8bb6b3d428fa23297e6042a0f39'
+
+
+cellContents =
+
+    '90fd404bf73441eda6010f30e43625fc'
+
+
+cellContents =
+
+    '9689cb338ac94ee5800d3900769988af'
+
+
+cellContents =
+
+    '96b672899c42402b8e309efb4d512bef'
+
+
+cellContents =
+
+    '982b58c402b34e7d8af04b133d0c7e50'
+
+
+cellContents =
+
+    '98f54445b1514aebb8cf91d743ba066e'
+
+
+cellContents =
+
+    '9e272bea91934c10a802f7e18b2937a3'
+
+
+cellContents =
+
+    '9ed8f0b9d61544c49ec9e07ecd744922'
+
+
+cellContents =
+
+    '9f5e6063d19e4f56b3f95c2260d3bfc9'
+
+
+cellContents =
+
+    'a08ec05975924698bb4525a9c3680c23'
+
+
+cellContents =
+
+    'a1af7c4247af435cbb51b932a3cd7b91'
+
+
+cellContents =
+
+    'a319188c6b8042288f2b8f423c0fcf97'
+
+
+cellContents =
+
+    'a604575360bb4e65bc891ef0b47aab35'
+
+
+cellContents =
+
+    'a6d8467e88e34ea5858361c5ab9747ae'
+
+
+cellContents =
+
+    'a971ac230664405d9f5c9ca892af003e'
+
+
+cellContents =
+
+    'a9ec7d9eb1794782a58943c7d1642be9'
+
+
+cellContents =
+
+    'ab318624db9d41d8b7b834712434f28f'
+
+
+cellContents =
+
+    'ab8a55edff474cadad9152b9dc25aca7'
+
+
+cellContents =
+
+    'acb9750e7e174cefbee15d710f9bf3a7'
+
+
+cellContents =
+
+    'ad007b5946f648b9958a2b9d28cca3b7'
+
+
+cellContents =
+
+    'b0c61486b0614b6bac02130a3ea0b080'
+
+
+cellContents =
+
+    'b1f2442fa97347b49891f028f0d44adc'
+
+
+cellContents =
+
+    'b2ec0fd0fbcf4abcad804ae444e30b55'
+
+
+cellContents =
+
+    'b33b7c8f0b0d400988a748e9d9cae6cb'
+
+
+cellContents =
+
+    'b3f1d232439242589256d38ff4b59f94'
+
+
+cellContents =
+
+    'b41c63e8bb854f839bc6e611fd9ef075'
+
+
+cellContents =
+
+    'b4aea804fc6e4d58906ff3a932ca9dc5'
+
+
+cellContents =
+
+    'b68c5ec208754d77b4b7738d2b2f313c'
+
+
+cellContents =
+
+    'bb02202fd1404bec95ce5c2b117a2167'
+
+
+cellContents =
+
+    'bc9f105f6d9944ac987167defd5e85cd'
+
+
+cellContents =
+
+    'bd3028c71fde401da6b25f8e61eb4aa1'
+
+
+cellContents =
+
+    'beafb7c6ef39478eaa470f1ad39f95a3'
+
+
+cellContents =
+
+    'c08f65a0bf4c462e9d07ad56b3adcac8'
+
+
+cellContents =
+
+    'c14b2c74447b4526a6e9415d2728c7ca'
+
+
+cellContents =
+
+    'c6a286151b924085956eeeedb2573c03'
+
+
+cellContents =
+
+    'caf2e99d8f1f4043b567c3fe28dc33ac'
+
+
+cellContents =
+
+    'cd0c3b1fc73a499187244e74381900cb'
+
+
+cellContents =
+
+    'cd29af7ed6704d8e83e2da6e52abda71'
+
+
+cellContents =
+
+    'd0f4dd92a63b476688895327fca1bd91'
+
+
+cellContents =
+
+    'd1875ee666774117a7a8930ab5cde775'
+
+
+cellContents =
+
+    'd1cebf4a412747ee85cb465fca2ac445'
+
+
+cellContents =
+
+    'd277e6799fdd44cd9f2cf9927e44d721'
+
+
+cellContents =
+
+    'd32f41fb07444a6281f60260c4920049'
+
+
+cellContents =
+
+    'd709d21402ee46c1a73ae7074cb2623e'
+
+
+cellContents =
+
+    'd74be531b0fd42c3954e4a4f7eef922a'
+
+
+cellContents =
+
+    'dbfdb5c6f52e48f387e7fb922df9e7a9'
+
+
+cellContents =
+
+    'dc85552c248848d99da167a380945b85'
+
+
+cellContents =
+
+    'dcc938da3e454c2fae0f47817be04518'
+
+
+cellContents =
+
+    'dcf98acc736b4af6bdcaa320a413165a'
+
+
+cellContents =
+
+    'dd5ed85806234387b1bf109175c32ef4'
+
+
+cellContents =
+
+    'ddc422e487e24fc0b56bddc2d6a92f58'
+
+
+cellContents =
+
+    'de4faf551bcf427fb019829bb4b64ff1'
+
+
+cellContents =
+
+    'e1b169c344e043e59ee32df7a678a5ea'
+
+
+cellContents =
+
+    'e1fc422640ce43b7b92eaa7cecd0cf4d'
+
+
+cellContents =
+
+    'e41bc2ec3e0b4c37806b3f6f25c8c4db'
+
+
+cellContents =
+
+    'e6772001dffc4fb486e96c395edd176d'
+
+
+cellContents =
+
+    'ec16d1f5f8a94c198cce92f6ea9eb3f7'
+
+
+cellContents =
+
+    'ed7be9aee60347318d91a8285abaee33'
+
+
+cellContents =
+
+    'edeea137080d42d3a0ce5cfe0d4a68e7'
+
+
+cellContents =
+
+    'f0f2030e17fd4dd99104899e59d72ed8'
+
+
+cellContents =
+
+    'f1534b2a5350442cbb9d8c7142668d31'
+
+
+cellContents =
+
+    'f3720205dc7641018a5672043fc896b5'
+
+
+cellContents =
+
+    'f537854517d44a64a57ef6c91ef4cb3a'
+
+
+cellContents =
+
+    'f54442d180fa4678ac94c3ad03bc37fb'
+
+
+cellContents =
+
+    'f601cf2f081f484dab0e21a8ec8d3770'
+
+
+cellContents =
+
+    'f640d37798e941d3876161eb33072c65'
+
+
+cellContents =
+
+    'f7cc504a37c945f5b50d599c54dca157'
+
+
+cellContents =
+
+    'f8a165b051df413cb7c6c7fc80547db4'
+
+
+cellContents =
+
+    'f921b592fa4d49f7b77381a0e903aaed'
+
+
+cellContents =
+
+    'f9c07ba7152af624e04011ac0c484cd5'
+
+
+cellContents =
+
+    'f9c0a08bd1e54c18e04011ac0c4864df'
+
+
+cellContents =
+
+    'f9c0a0d95af64476e04011ac0d4830d3'
+
+
+cellContents =
+
+    'f9c0a12c2651d9eae04011ac0d483201'
+
+
+cellContents =
+
+    'f9c1df1025b8c8aee04011ac0d486375'
+
+
+cellContents =
+
+    'f9c23ce87f1c9417e04011ac0d482562'
+
+
+cellContents =
+
+    'f9c23d0974e407f9e04011ac0d482577'
+
+
+cellContents =
+
+    'f9c26646d2b0cf30e04011ac0d483918'
+
+
+cellContents =
+
+    'f9c39eb739a96626e04011ac0d4870c2'
+
+
+cellContents =
+
+    'f9c3bc8edbc41ed0e04011ac0d4803a9'
+
+
+cellContents =
+
+    'f9c3e4e31b95b71ae04011ac0d4819e7'
+
+
+cellContents =
+
+    'f9c3eaada0d98bf8e04011ac0d481d8e'
+
+
+cellContents =
+
+    'f9c4e06ce8a6613be04011ac0d4828ba'
+
+
+cellContents =
+
+    'f9c516173fcb91c5e04011ac0d484abf'
+
+
+cellContents =
+
+    'f9c650e7905378ebe04011ac0d4874bb'
+
+
+cellContents =
+
+    'fc9d5fc6719b0525e04011ac0d485f83'
+
+
+cellContents =
+
+    'fc9d5fc67f7d1313e04011ac0d485f85'
+
+
+cellContents =
+
+    'fc9d93b692e8acb7e04011ac0d487dee'
+
+
+cellContents =
+
+    'fe083d2dd0884ac1825b8c5bbfe974ac'
+
+
+cellContents =
+
+    'ff870342f0d644508f9c344c046a0baf'
+
+Building n and N tables...
+Processing covariates...
+Finding bagels...  1000/16838 2000/16838 3000/16838 4000/16838 5000/16838 6000/16838 7000/16838 8000/16838 9000/16838 10000/16838 11000/16838 12000/16838 13000/16838 14000/16838 15000/16838 16000/16838 
+Expanding to (x,X)_gcp...
+Calculating p-value using 2D Projection method...  1000/16838 2000/16838 3000/16838 4000/16838 5000/16838 6000/16838 7000/16838 8000/16838 9000/16838 10000/16838 11000/16838 12000/16838 13000/16838 14000/16838 15000/16838 16000/16838 
+Done.  Wrote results to /storage/home/yur97/yur97/gitlab/pcawg-to-mutsigcv/mutsig_out/nsyn/out08262020/Prost/Prost.sig_genes.txt
+TIME USED FOR Prost is 781.814174891
+
+======================================
+  MutSigCV
+  v1.4
+
+  (c) Mike Lawrence and Gaddy Getz
+  Broad Institute of MIT and Harvard
+======================================
+
+
+MutSigCV: PREPROCESS
+--------------------
+Loading mutation_file...
+Loading coverage file...
+Processing mutation "effect"...
+WARNING:  939395/12387113 mutations could not be mapped to effect using mutation_type_dictionary_file:
+
+    Start_Codon_SNP: [97]
+            lincRNA: [939298]
+          ----TOTAL: [939395]
+          They will be removed from the analysis.
+Processing mutation "categ"...
+Will use the categories already present.
+Writing preprocessed files.
+HUGE STRUCT: SAVING CHUNK 1/58
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 2/58
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 3/58
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 4/58
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 5/58
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 6/58
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 7/58
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 8/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 9/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 10/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 11/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 12/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 13/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 14/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 15/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 16/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 17/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 18/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 19/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 20/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 21/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 22/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 23/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 24/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 25/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 26/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 27/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 28/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 29/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 30/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 31/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 32/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 33/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 34/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 35/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 36/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 37/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 38/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 39/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 40/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 41/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 42/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 43/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 44/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 45/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 46/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 47/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 48/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 49/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 50/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 51/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 52/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 53/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 54/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 55/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 56/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 57/58
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 58/58
+HUGE STRUCT: SAVING CHUNK 1/4
+  [save_struct] 44/109 45/109 46/109 47/109 48/109 49/109 50/109 51/109 52/109 53/109 54/109 55/109 56/109 57/109 58/109 59/109 60/109 61/109 62/109 63/109 64/109 65/109 66/109 67/109 68/109 69/109 70/109 71/109 72/109 73/109 74/109 75/109 76/109 77/109 78/109 79/109 80/109 81/109 82/109 83/109 84/109 85/109 86/109 87/109 88/109 89/109 90/109 91/109 92/109 93/109 94/109 95/109 96/109 97/109 98/109 99/109 100/109 101/109 102/109 103/109 104/109 105/109 106/109 107/109 108/109 109/109  [collapse]
+HUGE STRUCT: SAVING CHUNK 2/4
+  [save_struct] 50/109 51/109 52/109 53/109 54/109 55/109 56/109 57/109 58/109 59/109 60/109 61/109 62/109 63/109 64/109 65/109 66/109 67/109 68/109 69/109 70/109 71/109 72/109 73/109 74/109 75/109 76/109 77/109 78/109 79/109 80/109 81/109 82/109 83/109 84/109 85/109 86/109 87/109 88/109 89/109 90/109 91/109 92/109 93/109 94/109 95/109 96/109 97/109 98/109 99/109 100/109 101/109 102/109 103/109 104/109 105/109 106/109 107/109 108/109 109/109  [collapse]
+HUGE STRUCT: SAVING CHUNK 3/4
+  [save_struct] 50/109 51/109 52/109 53/109 54/109 55/109 56/109 57/109 58/109 59/109 60/109 61/109 62/109 63/109 64/109 65/109 66/109 67/109 68/109 69/109 70/109 71/109 72/109 73/109 74/109 75/109 76/109 77/109 78/109 79/109 80/109 81/109 82/109 83/109 84/109 85/109 86/109 87/109 88/109 89/109 90/109 91/109 92/109 93/109 94/109 95/109 96/109 97/109 98/109 99/109 100/109 101/109 102/109 103/109 104/109 105/109 106/109 107/109 108/109 109/109  [collapse]
+HUGE STRUCT: SAVING CHUNK 4/4
+  [save_struct] 60/109 61/109 62/109 63/109 64/109 65/109 66/109 67/109 68/109 69/109 70/109 71/109 72/109 73/109 74/109 75/109 76/109 77/109 78/109 79/109 80/109 81/109 82/109 83/109 84/109 85/109 86/109 87/109 88/109 89/109 90/109 91/109 92/109 93/109 94/109 95/109 96/109 97/109 98/109 99/109 100/109 101/109 102/109 103/109 104/109 105/109 106/109 107/109 108/109 109/109  [collapse]
+MutSig_preprocess finished.
+
+
+MutSigCV: RUN
+-------------
+Loading mutation_file...
+NOTE:  Both "gene" and "Hugo_Symbol" are present in mutation_file.  Using "gene".
+NOTE:  Both "patient" and "Tumor_Sample_Barcode" are present in mutation_file.  Using "patient".
+Loading coverage file...
+Loading covariate file...
+NOTE:  9433/25776 gene names could not be mapped to coverage information.  Excluding them.
+NOTE:  Converting "-" to "_" in patient names.
+
+cellContents =
+
+    '04aa6b778074480c872ea1a47afa5314'
+
+
+cellContents =
+
+    '04c09376875641d9bbcaf464170a8cfb'
+
+
+cellContents =
+
+    '08b5d0e44661460ea9f7f2e687414711'
+
+
+cellContents =
+
+    '0ab4d7829a5048b996e46ce42b2ea034'
+
+
+cellContents =
+
+    '0dd0718d5ddf4c598c470f51303daeb5'
+
+
+cellContents =
+
+    '108749d25c624ef192dfaec6941ba53b'
+
+
+cellContents =
+
+    '10bb1a92901e4a1480f45e88f997754b'
+
+
+cellContents =
+
+    '12f1ae2f266645be9742f502d212373d'
+
+
+cellContents =
+
+    '13c629759f5e4d40a461dceab08a31ec'
+
+
+cellContents =
+
+    '14630c199ee04ab39d8b8c3309d1e7d0'
+
+
+cellContents =
+
+    '15daadb06b2442489225470dc08f1552'
+
+
+cellContents =
+
+    '16d5519eecb94fc881f1e0e4adf722a8'
+
+
+cellContents =
+
+    '1ac1538004a242dd8ade28556a570e80'
+
+
+cellContents =
+
+    '1cd0acf231164dfaa0630a435b9f6da3'
+
+
+cellContents =
+
+    '1d4a091dfe6549c088105a95243b108a'
+
+
+cellContents =
+
+    '1daefc495248494887ce0ec19a248ef9'
+
+
+cellContents =
+
+    '20e02396e676412d972444a428919cdb'
+
+
+cellContents =
+
+    '22d6777861fc4f1595b87e7c6cc7112b'
+
+
+cellContents =
+
+    '22edd867dcd642b592bb025ceb84b106'
+
+
+cellContents =
+
+    '2399ab13abfa480e9fda7947edc420be'
+
+
+cellContents =
+
+    '2510337128ac4f43b0e22d376d0dcb84'
+
+
+cellContents =
+
+    '25e20393752b479690010e22ee04c586'
+
+
+cellContents =
+
+    '2790b96463e349aabf8c9a00d3448c25'
+
+
+cellContents =
+
+    '28839c7590a8493fb6588c63e0ebd324'
+
+
+cellContents =
+
+    '2e76891cb6204cc093156f1217b09b1e'
+
+
+cellContents =
+
+    '30600994c1ec44c9a6203f6c617eb928'
+
+
+cellContents =
+
+    '3433b1f359d14ac29bbfe0c4042b4ddc'
+
+
+cellContents =
+
+    '35a74e5316ff476483976a9b02dfe733'
+
+
+cellContents =
+
+    '3869ff3f21b948178ff483c6fc75ab11'
+
+
+cellContents =
+
+    '39c476fd273b4136874c53352f1be008'
+
+
+cellContents =
+
+    '3f2ecbcd5c9e4d578aa5962e2e86a83c'
+
+
+cellContents =
+
+    '3f98d326567642579af80a5f5d3c2527'
+
+
+cellContents =
+
+    '41a7b031d9284a1f891b82fb3f6d548f'
+
+
+cellContents =
+
+    '450e8ebaa3a94dcbb423e33dfcd5c34e'
+
+
+cellContents =
+
+    '4e8396f79506440196b6bb2e89557d59'
+
+
+cellContents =
+
+    '507620eff0fc4ac3a7c0ea2e36c40f77'
+
+
+cellContents =
+
+    '51893d3fe7f343f99fd0c0f25ae96804'
+
+
+cellContents =
+
+    '524bbd141e1f479b9a71d27fce32d8bc'
+
+
+cellContents =
+
+    '5310f698d31a462884b4dc9ac29722a5'
+
+
+cellContents =
+
+    '54a770102f164da98ca0746a51801a00'
+
+
+cellContents =
+
+    '561fd34c7c7d4df0bbfc3d31147ca562'
+
+
+cellContents =
+
+    '56ddcb96e90b4fceaa4cc677bbfee488'
+
+
+cellContents =
+
+    '58d3e932b4a34caca6ac73160e354a15'
+
+
+cellContents =
+
+    '5912d4b32d5d4b98b9671b4ff177097a'
+
+
+cellContents =
+
+    '5c3def3ab51541f68157681b963534e7'
+
+
+cellContents =
+
+    '60413de16cd24f7481803bdd394d6d16'
+
+
+cellContents =
+
+    '63762458902a4329a823703b54cb5f9d'
+
+
+cellContents =
+
+    '64dd81e135fa45798a4cf7486adbb949'
+
+
+cellContents =
+
+    '6507e084c0384ba6a431fb9a53190d5f'
+
+
+cellContents =
+
+    '66d312fc809d428b98e3a29d211db35c'
+
+
+cellContents =
+
+    '681e2301205740e4ab63934775d63faa'
+
+
+cellContents =
+
+    '6c88403749f941c3b0e59cbcd545aeb7'
+
+
+cellContents =
+
+    '6d4a548a7e304b6b9a1372827eed439c'
+
+
+cellContents =
+
+    '7117854b6f0a4a43b66c506a3e29377d'
+
+
+cellContents =
+
+    '72108583532046ec945f5ff173d7dc15'
+
+
+cellContents =
+
+    '74e5905f6350498a94549ea0593d2f56'
+
+
+cellContents =
+
+    '75ba672211484a52a9ed68d890238205'
+
+
+cellContents =
+
+    '76a0d9c95e6944e89ed26d2e387803fc'
+
+
+cellContents =
+
+    '7ba70717d65e4a45af7960a976770526'
+
+
+cellContents =
+
+    '7e22401df4cd44c58a01b08a439e5a31'
+
+
+cellContents =
+
+    '7edc42d3d08e4360a3e1aeb57cfc6640'
+
+
+cellContents =
+
+    '7f031d713cb7474486bda3beecfe166e'
+
+
+cellContents =
+
+    '83a1b3042ec144aea9c58ad3a2a46a1f'
+
+
+cellContents =
+
+    '88f2c4963eb44c03b3a58d5a55803aaf'
+
+
+cellContents =
+
+    '897ba508d74b46bf85541210a66a36d1'
+
+
+cellContents =
+
+    '8ca665f8fe7848bf8c0fc606d92885d4'
+
+
+cellContents =
+
+    '8d5ffe626dd94764b0b75e3010eefe6d'
+
+
+cellContents =
+
+    '8ea666b72b6e4df89a9db8265b9749b4'
+
+
+cellContents =
+
+    '978ae91e6ebe4efa97ffcfad511ae7b3'
+
+
+cellContents =
+
+    '98e8f23c59704fce95514b11a772fe1b'
+
+
+cellContents =
+
+    '9e0009d1c9934247970688ee84591dec'
+
+
+cellContents =
+
+    '9fc5b5c7397342b48710454de0cb5b50'
+
+
+cellContents =
+
+    'a0583407712d46f38c4e4eeaa0149087'
+
+
+cellContents =
+
+    'a6e24c2a26b9409cbbcda8fcdd1e437c'
+
+
+cellContents =
+
+    'a84915de6562483686f9f2a05598296e'
+
+
+cellContents =
+
+    'affa4ef402ec40f1b6a2739f8bf2afa9'
+
+
+cellContents =
+
+    'b07bad52d44c4b27900a960985bfadec'
+
+
+cellContents =
+
+    'b35d9a6829f449abb83eb5151679e3af'
+
+
+cellContents =
+
+    'b3befa408f444eb6ada0ec395f460656'
+
+
+cellContents =
+
+    'b42d183cbc9c46529e5610c54c5ee96e'
+
+
+cellContents =
+
+    'bcefbf6a80ff48259d3a492e2dceb35d'
+
+
+cellContents =
+
+    'bcf76f1a7109422d94c95e8364895fa0'
+
+
+cellContents =
+
+    'c21a5d559790429fa4e6420293c07b53'
+
+
+cellContents =
+
+    'c95a2b1b726c46089fffd57b6f1aa75a'
+
+
+cellContents =
+
+    'ca004926f3ac48248ed5d84e62efdfae'
+
+
+cellContents =
+
+    'ca8fa9f53190440d987922e33d05ca6c'
+
+
+cellContents =
+
+    'd053f88f09e6472ea691bb293c461399'
+
+
+cellContents =
+
+    'd056645f4dd349f3b0a42293e2b4d82c'
+
+
+cellContents =
+
+    'd0e033bc8e974322b3b18626f1e2449b'
+
+
+cellContents =
+
+    'd2620dab4319499ab8f19575aaf8f4f3'
+
+
+cellContents =
+
+    'd432e99a67fb4609b90f99438eee7cae'
+
+
+cellContents =
+
+    'deb9fbb6656b41ce8299554efc2379bd'
+
+
+cellContents =
+
+    'e04bcdff32064c25bae909f0222b074a'
+
+
+cellContents =
+
+    'e277405012574c29b201d79ce70fe17e'
+
+
+cellContents =
+
+    'e2b2357cda6f4ca39c07a22f0423e8fe'
+
+
+cellContents =
+
+    'ead1bc2e42c346d98f6f8cb16ba9d2c3'
+
+
+cellContents =
+
+    'eb9a8f12645143cc95b32e86cf704c96'
+
+
+cellContents =
+
+    'eeddf70193f94f1085cb9dce1760bae8'
+
+
+cellContents =
+
+    'f07b9192c86f4ee4a3b5feb9c5098bf4'
+
+
+cellContents =
+
+    'f24688a9795249d8ba802bbad472379c'
+
+
+cellContents =
+
+    'f81693ba09ee4201a3890ceeda8a4636'
+
+
+cellContents =
+
+    'fa4d35e3fc384e26a9e0521a648acec1'
+
+
+cellContents =
+
+    'fc009c3d66fc4b9cae43014607e3723a'
+
+
+cellContents =
+
+    'fc24911383d44abe8c80a4f7305dcd91'
+
+
+cellContents =
+
+    'fe8c62a6c11346e8ab91fdb90bb6a59f'
+
+Building n and N tables...
+Processing covariates...
+Finding bagels...  1000/16838 2000/16838 3000/16838 4000/16838 5000/16838 6000/16838 7000/16838 8000/16838 9000/16838 10000/16838 11000/16838 12000/16838 13000/16838 14000/16838 15000/16838 16000/16838 
+Expanding to (x,X)_gcp...
+Calculating p-value using 2D Projection method...  1000/16838 2000/16838 3000/16838 4000/16838 5000/16838 6000/16838 7000/16838 8000/16838 9000/16838 10000/16838 11000/16838 12000/16838 13000/16838 14000/16838 15000/16838 16000/16838 
+Done.  Wrote results to /storage/home/yur97/yur97/gitlab/pcawg-to-mutsigcv/mutsig_out/nsyn/out08262020/Skin/Skin.sig_genes.txt
+TIME USED FOR Skin is 3755.28542805
+
+======================================
+  MutSigCV
+  v1.4
+
+  (c) Mike Lawrence and Gaddy Getz
+  Broad Institute of MIT and Harvard
+======================================
+
+
+MutSigCV: PREPROCESS
+--------------------
+Loading mutation_file...
+Loading coverage file...
+Processing mutation "effect"...
+WARNING:  65930/917151 mutations could not be mapped to effect using mutation_type_dictionary_file:
+
+    Start_Codon_SNP: [19]
+            lincRNA: [65911]
+          ----TOTAL: [65930]
+          They will be removed from the analysis.
+Processing mutation "categ"...
+Will use the categories already present.
+Writing preprocessed files.
+HUGE STRUCT: SAVING CHUNK 1/5
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 2/5
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 3/5
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 4/5
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 5/5
+HUGE STRUCT: SAVING CHUNK 1/3
+  [save_struct] 25/59 26/59 27/59 28/59 29/59 30/59 31/59 32/59 33/59 34/59 35/59 36/59 37/59 38/59 39/59 40/59 41/59 42/59 43/59 44/59 45/59 46/59 47/59 48/59 49/59 50/59 51/59 52/59 53/59 54/59 55/59 56/59 57/59 58/59 59/59  [collapse]
+HUGE STRUCT: SAVING CHUNK 2/3
+  [save_struct] 27/59 28/59 29/59 30/59 31/59 32/59 33/59 34/59 35/59 36/59 37/59 38/59 39/59 40/59 41/59 42/59 43/59 44/59 45/59 46/59 47/59 48/59 49/59 50/59 51/59 52/59 53/59 54/59 55/59 56/59 57/59 58/59 59/59  [collapse]
+HUGE STRUCT: SAVING CHUNK 3/3
+MutSig_preprocess finished.
+
+
+MutSigCV: RUN
+-------------
+Loading mutation_file...
+NOTE:  Both "gene" and "Hugo_Symbol" are present in mutation_file.  Using "gene".
+NOTE:  Both "patient" and "Tumor_Sample_Barcode" are present in mutation_file.  Using "patient".
+Loading coverage file...
+Loading covariate file...
+NOTE:  7662/22873 gene names could not be mapped to coverage information.  Excluding them.
+NOTE:  Converting "-" to "_" in patient names.
+
+cellContents =
+
+    '02c6a89349c549d18eb1195021e70d52'
+
+
+cellContents =
+
+    '0822761602a546e89db1f2d1d691ab23'
+
+
+cellContents =
+
+    '0e6ca8dc0f31467595b15920576daeff'
+
+
+cellContents =
+
+    '0f9e70b324cf4d76af7b84ace66ec5a7'
+
+
+cellContents =
+
+    '1727e88bdf0a4af291918c6061d98ad0'
+
+
+cellContents =
+
+    '190eb791383d4e27870de470630843e7'
+
+
+cellContents =
+
+    '1aff91a61b0f45758f4b4e064a50b886'
+
+
+cellContents =
+
+    '1db83e80bdf74d8d8008bd8406d641fc'
+
+
+cellContents =
+
+    '1fdab6a673464229aa8d5dbd258f0c60'
+
+
+cellContents =
+
+    '1ff155dddeb444e0b3a2e4875b618435'
+
+
+cellContents =
+
+    '1fff8b62534b4d71a65fe5f93b8b50ed'
+
+
+cellContents =
+
+    '21205681a0c748d081d40b7ef31158cf'
+
+
+cellContents =
+
+    '29fc38aaf36746a3a14da5f657ad0caa'
+
+
+cellContents =
+
+    '34d7b6cccfcf4178b075f4d129ab18f7'
+
+
+cellContents =
+
+    '3e604a1cb95f44ff9723e2fac845da3b'
+
+
+cellContents =
+
+    '469eddf26e0246bf820f6296a2b776e2'
+
+
+cellContents =
+
+    '46d35b82e1b74d35be5e3a70fd47e421'
+
+
+cellContents =
+
+    '5046f1b49d954841ba30691fa44719a2'
+
+
+cellContents =
+
+    '5193a4826ed94504bd7cc8b9e4103577'
+
+
+cellContents =
+
+    '54e78de0d3574125a904ab35e461572b'
+
+
+cellContents =
+
+    '6bbd66ddefee4d6eb02ff88e98526b82'
+
+
+cellContents =
+
+    '7625877a7a2b466f944b9e56689ad47b'
+
+
+cellContents =
+
+    '7e584ff60b814f8581dab8117afee326'
+
+
+cellContents =
+
+    '8159835924d54a8ba6e67a6f94289119'
+
+
+cellContents =
+
+    '8294a96959a14d3b895bf07e96bf9f7a'
+
+
+cellContents =
+
+    '83eca7b545bb44c08afe36f8988d0078'
+
+
+cellContents =
+
+    '878a7fe720ff46519587b4d6fd42e929'
+
+
+cellContents =
+
+    '9650640f154d4696aa963611c6fcee7b'
+
+
+cellContents =
+
+    '9988eb0701f64f838699bb63e0525f08'
+
+
+cellContents =
+
+    '9fb6b7be008448f7a2566d170e72e97f'
+
+
+cellContents =
+
+    'a0fe80e0e3ac485b8a1a4c80c101b874'
+
+
+cellContents =
+
+    'a315b798f03748d591ede733e3bbd6ee'
+
+
+cellContents =
+
+    'a8041e86071e46cd8fb57ecdc1ab0553'
+
+
+cellContents =
+
+    'ab923db754e84a50b7fdc2b4b300041e'
+
+
+cellContents =
+
+    'b537bc07999849f4bbbe5b617152bfd9'
+
+
+cellContents =
+
+    'b86e88e70d5f4b32a35fdc97251ab990'
+
+
+cellContents =
+
+    'bcc819ebf4d84ddc9fdca6307fb6741b'
+
+
+cellContents =
+
+    'c0812962a34548b7aec001336c2d1eed'
+
+
+cellContents =
+
+    'c121de1578f7469891bffd0485c466c2'
+
+
+cellContents =
+
+    'c2124bb230e140939a8a3a188a6dc0a9'
+
+
+cellContents =
+
+    'c76f7fcc27484b6d805ed21652dd5e3a'
+
+
+cellContents =
+
+    'ca137611533a4d20a85d8e4c3a1eab2d'
+
+
+cellContents =
+
+    'd3709eeaca2a49acb79c871a5473d450'
+
+
+cellContents =
+
+    'd4b80307abbd48bbb52c6dcd409699a2'
+
+
+cellContents =
+
+    'dd67dec635dd4efeb913ed4884855365'
+
+
+cellContents =
+
+    'de8ef60b4dbe4aa8adef6f58cdfada29'
+
+
+cellContents =
+
+    'dfa20d2d1ba3476ab4b921d21470bee2'
+
+
+cellContents =
+
+    'e2b5c926491d430d8d9c5c73d7752d1b'
+
+
+cellContents =
+
+    'e2e6a409b64d463cac3be7987a3124f0'
+
+
+cellContents =
+
+    'e52ffa79557a402481f3f3826c227ec5'
+
+
+cellContents =
+
+    'ee96366756b149bd8896e07b536d3014'
+
+
+cellContents =
+
+    'ef673d3d20314036ba254bc7ef04075b'
+
+
+cellContents =
+
+    'f35f7712d5c647f698ed704edbbc1e19'
+
+
+cellContents =
+
+    'fb8b5ff541644276b75bb0ee6bda7329'
+
+
+cellContents =
+
+    'feccc27e5c2e433987460945fee93c1e'
+
+Building n and N tables...
+Processing covariates...
+Finding bagels...  1000/16838 2000/16838 3000/16838 4000/16838 5000/16838 6000/16838 7000/16838 8000/16838 9000/16838 10000/16838 11000/16838 12000/16838 13000/16838 14000/16838 15000/16838 16000/16838 
+Expanding to (x,X)_gcp...
+Calculating p-value using 2D Projection method...  1000/16838 2000/16838 3000/16838 4000/16838 5000/16838 6000/16838 7000/16838 8000/16838 9000/16838 10000/16838 11000/16838 12000/16838 13000/16838 14000/16838 15000/16838 16000/16838 
+Done.  Wrote results to /storage/home/yur97/yur97/gitlab/pcawg-to-mutsigcv/mutsig_out/nsyn/out08262020/Head/Head.sig_genes.txt
+TIME USED FOR Head is 460.447670937
+
+======================================
+  MutSigCV
+  v1.4
+
+  (c) Mike Lawrence and Gaddy Getz
+  Broad Institute of MIT and Harvard
+======================================
+
+
+MutSigCV: PREPROCESS
+--------------------
+Loading mutation_file...
+Loading coverage file...
+Processing mutation "effect"...
+WARNING:  71155/1075141 mutations could not be mapped to effect using mutation_type_dictionary_file:
+
+    Start_Codon_SNP: [8]
+            lincRNA: [71147]
+          ----TOTAL: [71155]
+          They will be removed from the analysis.
+Processing mutation "categ"...
+Will use the categories already present.
+Writing preprocessed files.
+HUGE STRUCT: SAVING CHUNK 1/6
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 2/6
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 3/6
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 4/6
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 5/6
+  [save_struct] 14/50 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 6/6
+HUGE STRUCT: SAVING CHUNK 1/2
+  [save_struct] 20/46 21/46 22/46 23/46 24/46 25/46 26/46 27/46 28/46 29/46 30/46 31/46 32/46 33/46 34/46 35/46 36/46 37/46 38/46 39/46 40/46 41/46 42/46 43/46 44/46 45/46 46/46  [collapse]
+HUGE STRUCT: SAVING CHUNK 2/2
+  [save_struct] 32/46 33/46 34/46 35/46 36/46 37/46 38/46 39/46 40/46 41/46 42/46 43/46 44/46 45/46 46/46  [collapse]
+MutSig_preprocess finished.
+
+
+MutSigCV: RUN
+-------------
+Loading mutation_file...
+NOTE:  Both "gene" and "Hugo_Symbol" are present in mutation_file.  Using "gene".
+NOTE:  Both "patient" and "Tumor_Sample_Barcode" are present in mutation_file.  Using "patient".
+Loading coverage file...
+Loading covariate file...
+NOTE:  8071/23573 gene names could not be mapped to coverage information.  Excluding them.
+NOTE:  Converting "-" to "_" in patient names.
+
+cellContents =
+
+    '00db4dc23ec74ff99233d69c8c8a607f'
+
+
+cellContents =
+
+    '0c39c03aec8442c6be698e98bc7a9f5a'
+
+
+cellContents =
+
+    '105a51c4cc7e4d0f9cf8e4d64a31d14d'
+
+
+cellContents =
+
+    '15d597ded26c4ce1b0cb077e39b55f30'
+
+
+cellContents =
+
+    '19c1c97fa3ec44a88a206f97caed1a4f'
+
+
+cellContents =
+
+    '19def402fb8d4b2790ddce9135a3c0a2'
+
+
+cellContents =
+
+    '23cc70c4b7444fa0a0deb25c0fdf212f'
+
+
+cellContents =
+
+    '2b78de4e4c8b4adfa0583dae797e7881'
+
+
+cellContents =
+
+    '42de14416f3c4b4db8b8ad91e4b1dbe2'
+
+
+cellContents =
+
+    '460f7427ebcf404b9e9ee0278d0bca95'
+
+
+cellContents =
+
+    '493e7008551c4c0eb567a0f31868629e'
+
+
+cellContents =
+
+    '554b94397e1143ec8bc3448c59100b9e'
+
+
+cellContents =
+
+    '55ada396087847248ebe00da367eed3d'
+
+
+cellContents =
+
+    '65f9a820f0264a108bb71fbc3b38321e'
+
+
+cellContents =
+
+    '6e599fccd79a4e0fb451c20768c989f9'
+
+
+cellContents =
+
+    '712ba532fb1a43faa356b446b509ceb7'
+
+
+cellContents =
+
+    '7364a11261b941c6b85f18c97c54cefd'
+
+
+cellContents =
+
+    '82be6087a49142d49b486a10d1bace18'
+
+
+cellContents =
+
+    '82d2ea5febdc4907a287fe837fd6b59c'
+
+
+cellContents =
+
+    '8d4cb709c95c4bdc844bc0bfa2a3028e'
+
+
+cellContents =
+
+    '8dd14f0e86014aa1864c3c49e768cdd1'
+
+
+cellContents =
+
+    '9212616300c341f29ce67aad5f621407'
+
+
+cellContents =
+
+    '95e8d38a122e494ca304bef4275fed7e'
+
+
+cellContents =
+
+    '96f337d2cec4448487cdab2109d2bf50'
+
+
+cellContents =
+
+    '99696731c88f427b975b1d90013e63ff'
+
+
+cellContents =
+
+    'a0e317b13f3b4d25b2d9fcc2211dfda3'
+
+
+cellContents =
+
+    'af96db5a684f41d1a9105a5193393d9c'
+
+
+cellContents =
+
+    'b0a83df8dd2c4c1bb2389081d2c22258'
+
+
+cellContents =
+
+    'b38d0777490148b89cdc33b7f13a424f'
+
+
+cellContents =
+
+    'b77084ab814849e0b3f990f7d9ea1862'
+
+
+cellContents =
+
+    'c75cc75a7496420fb526ea63c77e9839'
+
+
+cellContents =
+
+    'cc19a4809c664ee8a0c0921acac02689'
+
+
+cellContents =
+
+    'd12cfd8b682d41dfacf8ee7f68a6241c'
+
+
+cellContents =
+
+    'dec775c57d9a4dc5b399dc4b7ba49d73'
+
+
+cellContents =
+
+    'e7d74d3432554c2090fdb105e6e229c8'
+
+
+cellContents =
+
+    'ea6efcd111de45f08bdef1c06ad27e79'
+
+
+cellContents =
+
+    'eae45fbe9f7d4f59a0a91f0f0d69afc4'
+
+
+cellContents =
+
+    'ec31e92107824f77ac234190af1e61ee'
+
+
+cellContents =
+
+    'ed32c72508ae48eb8fa2719b9aeb7550'
+
+
+cellContents =
+
+    'f7187888f2614a3999b4966fd7207117'
+
+
+cellContents =
+
+    'f7dcc2e41fc44b39bc6a720e66116d68'
+
+
+cellContents =
+
+    'fd5041533cf644b999d521961ebac188'
+
+Building n and N tables...
+Processing covariates...
+Finding bagels...  1000/16838 2000/16838 3000/16838 4000/16838 5000/16838 6000/16838 7000/16838 8000/16838 9000/16838 10000/16838 11000/16838 12000/16838 13000/16838 14000/16838 15000/16838 16000/16838 
+Expanding to (x,X)_gcp...
+Calculating p-value using 2D Projection method...  1000/16838 2000/16838 3000/16838 4000/16838 5000/16838 6000/16838 7000/16838 8000/16838 9000/16838 10000/16838 11000/16838 12000/16838 13000/16838 14000/16838 15000/16838 16000/16838 
+Done.  Wrote results to /storage/home/yur97/yur97/gitlab/pcawg-to-mutsigcv/mutsig_out/nsyn/out08262020/Uterus/Uterus.sig_genes.txt
+TIME USED FOR Uterus is 505.425035
+NO COVERAGE OR NO MAF FILE: SoftTissue
+
+======================================
+  MutSigCV
+  v1.4
+
+  (c) Mike Lawrence and Gaddy Getz
+  Broad Institute of MIT and Harvard
+======================================
+
+
+MutSigCV: PREPROCESS
+--------------------
+Loading mutation_file...
+Loading coverage file...
+Processing mutation "effect"...
+WARNING:  8284/126751 mutations could not be mapped to effect using mutation_type_dictionary_file:
+
+    Start_Codon_SNP: [2]
+            lincRNA: [8282]
+          ----TOTAL: [8284]
+          They will be removed from the analysis.
+Processing mutation "categ"...
+Will use the categories already present.
+Writing preprocessed files.
+  [save_struct] 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse] [write]
+  [save_struct] 11/23 12/23 13/23 14/23 15/23 16/23 17/23 18/23 19/23 20/23 21/23 22/23 23/23  [collapse] [write]
+MutSig_preprocess finished.
+
+
+MutSigCV: RUN
+-------------
+Loading mutation_file...
+NOTE:  Both "gene" and "Hugo_Symbol" are present in mutation_file.  Using "gene".
+NOTE:  Both "patient" and "Tumor_Sample_Barcode" are present in mutation_file.  Using "patient".
+Loading coverage file...
+Loading covariate file...
+NOTE:  3982/13853 gene names could not be mapped to coverage information.  Excluding them.
+NOTE:  Converting "-" to "_" in patient names.
+
+cellContents =
+
+    '047f9e4d86b54943aef568199bf29e8c'
+
+
+cellContents =
+
+    '06dad93a4b6749b38fa5f2546e22bae7'
+
+
+cellContents =
+
+    '07d206583db447e7877b66536266edfc'
+
+
+cellContents =
+
+    '0d31a44f1fc543a2963336c4e650d3d2'
+
+
+cellContents =
+
+    '0f6b355e38984be6be97da0c3840a4ed'
+
+
+cellContents =
+
+    '14b8bbf2310b459bb52da7ef510ce1cf'
+
+
+cellContents =
+
+    '3269608c5dd7452a976a31ac971aac2f'
+
+
+cellContents =
+
+    '43be43cba3674a7494e4973acafcf576'
+
+
+cellContents =
+
+    '7bc3209fb34949bf9b3d44ef870b586f'
+
+
+cellContents =
+
+    '7dc3e035c7ae4164a62b9c2460812b05'
+
+
+cellContents =
+
+    '801e67c8c506410abdf0856a66e974f4'
+
+
+cellContents =
+
+    '8be2b0f57bad4720b13ce95b32bdb933'
+
+
+cellContents =
+
+    '945e680828874f32ac328f9e00353bf6'
+
+
+cellContents =
+
+    '9ff2109358d74b69aadec242a383ea56'
+
+
+cellContents =
+
+    'a67f453199ef43df82f5f6abc4b11826'
+
+
+cellContents =
+
+    'b3b3a27cee9a42afa6d19af5970a98b9'
+
+
+cellContents =
+
+    'b9d1a64ed4454174a5b476dd6ea69419'
+
+
+cellContents =
+
+    'e07991a409014ed18704aa376565d862'
+
+
+cellContents =
+
+    'f658c350fb8942688a59a07e365f4221'
+
+Building n and N tables...
+Processing covariates...
+Finding bagels...  1000/16838 2000/16838 3000/16838 4000/16838 5000/16838 6000/16838 7000/16838 8000/16838 9000/16838 10000/16838 11000/16838 12000/16838 13000/16838 14000/16838 15000/16838 16000/16838 
+Expanding to (x,X)_gcp...
+Calculating p-value using 2D Projection method...  1000/16838 2000/16838 3000/16838 4000/16838 5000/16838 6000/16838 7000/16838 8000/16838 9000/16838 10000/16838 11000/16838 12000/16838 13000/16838 14000/16838 15000/16838 16000/16838 
+Done.  Wrote results to /storage/home/yur97/yur97/gitlab/pcawg-to-mutsigcv/mutsig_out/nsyn/out08262020/Cervix/Cervix.sig_genes.txt
+TIME USED FOR Cervix is 160.724112988
+
+======================================
+  MutSigCV
+  v1.4
+
+  (c) Mike Lawrence and Gaddy Getz
+  Broad Institute of MIT and Harvard
+======================================
+
+
+MutSigCV: PREPROCESS
+--------------------
+Loading mutation_file...
+Loading coverage file...
+Processing mutation "effect"...
+WARNING:  30944/463201 mutations could not be mapped to effect using mutation_type_dictionary_file:
+
+    Start_Codon_SNP: [4]
+            lincRNA: [30940]
+          ----TOTAL: [30944]
+          They will be removed from the analysis.
+Processing mutation "categ"...
+Will use the categories already present.
+Writing preprocessed files.
+HUGE STRUCT: SAVING CHUNK 1/3
+  [save_struct] 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 2/3
+  [save_struct] 14/50 15/50 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 3/3
+  [save_struct] 12/26 13/26 14/26 15/26 16/26 17/26 18/26 19/26 20/26 21/26 22/26 23/26 24/26 25/26 26/26  [collapse] [write]
+MutSig_preprocess finished.
+
+
+MutSigCV: RUN
+-------------
+Loading mutation_file...
+NOTE:  Both "gene" and "Hugo_Symbol" are present in mutation_file.  Using "gene".
+NOTE:  Both "patient" and "Tumor_Sample_Barcode" are present in mutation_file.  Using "patient".
+Loading coverage file...
+Loading covariate file...
+NOTE:  6577/20976 gene names could not be mapped to coverage information.  Excluding them.
+NOTE:  Converting "-" to "_" in patient names.
+
+cellContents =
+
+    '0c7aca3fe0064de3afc220b4f727d4fd'
+
+
+cellContents =
+
+    '2b142863b9634cc98f8fc72503c93390'
+
+
+cellContents =
+
+    '301d6ce340994c1d8e50c04b7ce91450'
+
+
+cellContents =
+
+    '418a3dec96ff4719becbe1a8260cce2f'
+
+
+cellContents =
+
+    '448fe4713f4e4dc8a4e06f147dc93abe'
+
+
+cellContents =
+
+    '45a7949de63f4956866cdf51257032de'
+
+
+cellContents =
+
+    '4838b5a9968c4178bffb3fafe1f6dc09'
+
+
+cellContents =
+
+    '7d2a22eb73444cbaad7d94c3f9ef3d7c'
+
+
+cellContents =
+
+    '804ffa2e158b447d945c707684134c87'
+
+
+cellContents =
+
+    '8c619cbc9e91471697115236e55d8f46'
+
+
+cellContents =
+
+    '91f458e664b7454da542b0aa23638fd8'
+
+
+cellContents =
+
+    '973d05778ca444a1817f1d3c1bada151'
+
+
+cellContents =
+
+    'abd2d959d5ed4eb3975967eb1aa23325'
+
+
+cellContents =
+
+    'acc629cbad034cec9b21922e4932ef3e'
+
+
+cellContents =
+
+    'b73523d7f5a5414085374df4d1ecf465'
+
+
+cellContents =
+
+    'c66c92d5df6546e6861dd8a98808e6a3'
+
+
+cellContents =
+
+    'cda1a40316b6487ca82ac377d1d0f89d'
+
+
+cellContents =
+
+    'd4615ca0b5c74a5c8593bd50034a78ae'
+
+
+cellContents =
+
+    'df8a913c51604fc5950d7c890e24e820'
+
+
+cellContents =
+
+    'e6c78a98f45b482ba5514f11b8c1ff8b'
+
+
+cellContents =
+
+    'f389176fd8f345c2aae47378a3d6fc7f'
+
+
+cellContents =
+
+    'ffdd4febaca34104b1e8954d705a6450'
+
+Building n and N tables...
+Processing covariates...
+Finding bagels...  1000/16838 2000/16838 3000/16838 4000/16838 5000/16838 6000/16838 7000/16838 8000/16838 9000/16838 10000/16838 11000/16838 12000/16838 13000/16838 14000/16838 15000/16838 16000/16838 
+Expanding to (x,X)_gcp...
+Calculating p-value using 2D Projection method...  1000/16838 2000/16838 3000/16838 4000/16838 5000/16838 6000/16838 7000/16838 8000/16838 9000/16838 10000/16838 11000/16838 12000/16838 13000/16838 14000/16838 15000/16838 16000/16838 
+Done.  Wrote results to /storage/home/yur97/yur97/gitlab/pcawg-to-mutsigcv/mutsig_out/nsyn/out08262020/Bladder/Bladder.sig_genes.txt
+TIME USED FOR Bladder is 269.477132082
+...ended at Thu Aug 27 00:44:01 EDT 2020

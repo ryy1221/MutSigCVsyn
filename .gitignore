@@ -11,5 +11,7 @@ proc_09152020/**
 multitumor/**
 old/**
 .ipynb_checkpoints
+notebook/figure1/**
+notebook/figure4/**
 cov_process/figure/**
 cov_process/process_old/**

@@ -1,0 +1,50 @@
+...started at Wed Jun  9 15:52:49 EDT 2021
+
+======================================
+  MutSigCV
+  v1.4
+
+  (c) Mike Lawrence and Gaddy Getz
+  Broad Institute of MIT and Harvard
+======================================
+
+
+MutSigCV: PREPROCESS
+--------------------
+Loading mutation_file...
+	Not found: ../../maf_out/maf_cohorts_060121/histology/Lymph-BNHL.csv
+Error using MutSigCVs_nbg>demand_file (line 1266)
+1 file not found
+
+Error in MutSigCVs_nbg>load_struct (line 1432)
+  demand_file(filename);
+
+Error in MutSigCVs_nbg>MutSig_preprocess (line 223)
+  M = load_struct(mutation_file);
+
+Error in MutSigCVs_nbg (line 184)
+  MutSig_preprocess(mutation_file,coverage_file,covariate_file,output_filestem,varargin{:})
+
+Lymph-BNHL
+Traceback (most recent call last):
+  File "run_histology_syn.py", line 42, in <module>
+    runMutSigCV_syn(feat)
+  File "run_histology_syn.py", line 33, in runMutSigCV_syn
+    eng.MutSigCVs_nbg(maf,cov, covariates, outp, mut_dic, chain_f, nargout = 0)
+  File "/storage/home/yur97/.local/lib/python3.6/site-packages/matlab/engine/matlabengine.py", line 71, in __call__
+    _stderr, feval=True).result()
+  File "/storage/home/yur97/.local/lib/python3.6/site-packages/matlab/engine/futureresult.py", line 67, in result
+    return self.__future.result(timeout)
+  File "/storage/home/yur97/.local/lib/python3.6/site-packages/matlab/engine/fevalfuture.py", line 82, in result
+    self._result = pythonengine.getFEvalResult(self._future,self._nargout, None, out=self._out, err=self._err)
+matlab.engine.MatlabExecutionError: 
+  File /gpfs/group/epo2/default/yur97/gitlab/pcawg-to-mutsigcv/mutsigsyn/MutSigCVs_nbg.m, line 1266, in demand_file
+
+  File /gpfs/group/epo2/default/yur97/gitlab/pcawg-to-mutsigcv/mutsigsyn/MutSigCVs_nbg.m, line 1432, in load_struct
+
+  File /gpfs/group/epo2/default/yur97/gitlab/pcawg-to-mutsigcv/mutsigsyn/MutSigCVs_nbg.m, line 223, in MutSig_preprocess
+
+  File /gpfs/group/epo2/default/yur97/gitlab/pcawg-to-mutsigcv/mutsigsyn/MutSigCVs_nbg.m, line 184, in MutSigCVs_nbg
+1 file not found
+
+...ended at Wed Jun  9 15:53:02 EDT 2021

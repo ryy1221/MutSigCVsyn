@@ -1,0 +1,35 @@
+...started at Wed Jun  9 16:20:14 EDT 2021
+
+======================================
+  MutSigCV
+  v1.4
+
+  (c) Mike Lawrence and Gaddy Getz
+  Broad Institute of MIT and Harvard
+======================================
+
+
+MutSigCV: PREPROCESS
+--------------------
+Loading mutation_file...
+Skin-Melanoma
+Traceback (most recent call last):
+  File "run_histology_syn.py", line 37, in <module>
+    runMutSigCV_syn(feat)
+  File "run_histology_syn.py", line 34, in runMutSigCV_syn
+    eng.MutSigCVs_nbg(maf,cov, covariates, outp, mut_dic, chain_f, nargout = 0)
+  File "/storage/home/yur97/.local/lib/python3.6/site-packages/matlab/engine/matlabengine.py", line 71, in __call__
+    _stderr, feval=True).result()
+  File "/storage/home/yur97/.local/lib/python3.6/site-packages/matlab/engine/futureresult.py", line 67, in result
+    return self.__future.result(timeout)
+  File "/storage/home/yur97/.local/lib/python3.6/site-packages/matlab/engine/fevalfuture.py", line 82, in result
+    self._result = pythonengine.getFEvalResult(self._future,self._nargout, None, out=self._out, err=self._err)
+matlab.engine.EngineError: MATLAB function cannot be evaluated
+Error in atexit._run_exitfuncs:
+Traceback (most recent call last):
+  File "/storage/home/yur97/.local/lib/python3.6/site-packages/matlab/engine/__init__.py", line 193, in __exit_engines
+    eng().exit()
+  File "/storage/home/yur97/.local/lib/python3.6/site-packages/matlab/engine/matlabengine.py", line 232, in exit
+    pythonengine.closeMATLAB(self.__dict__["_matlab"])
+SystemError: MATLAB process cannot be terminated.
+...ended at Wed Jun  9 16:22:14 EDT 2021

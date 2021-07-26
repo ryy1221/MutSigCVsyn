@@ -1,0 +1,53 @@
+...started at Mon Jun 21 20:03:21 EDT 2021
+
+======================================
+  MutSigCV
+  v1.4
+
+  (c) Mike Lawrence and Gaddy Getz
+  Broad Institute of MIT and Harvard
+======================================
+
+
+MutSigCV: PREPROCESS
+--------------------
+Loading mutation_file...
+Loading coverage file...
+Processing mutation "effect"...
+WARNING:  44045/69387 mutations could not be mapped to effect using mutation_type_dictionary_file:
+
+    Start_Codon_SNP: [1]
+            5'Flank: [1129]
+                RNA: [2640]
+            lincRNA: [4807]
+                IGR: [35468]
+          ----TOTAL: [44045]
+          They will be removed from the analysis.
+Processing mutation "categ"...
+Will use the categories already present.
+Writing preprocessed files.
+HUGE STRUCT: SAVING CHUNK 1/3
+  [save_struct] 24/51 25/51 26/51 27/51 28/51 29/51 30/51 31/51 32/51 33/51 34/51 35/51 36/51 37/51 38/51 39/51 40/51 41/51 42/51 43/51 44/51 45/51 46/51 47/51 48/51 49/51 50/51 51/51  [collapse]
+HUGE STRUCT: SAVING CHUNK 2/3
+  [save_struct] 27/51 28/51 29/51 30/51 31/51 32/51 33/51 34/51 35/51 36/51 37/51 38/51 39/51 40/51 41/51 42/51 43/51 44/51 45/51 46/51 47/51 48/51 49/51 50/51 51/51  [collapse]
+HUGE STRUCT: SAVING CHUNK 3/3
+MutSig_preprocess finished.
+
+
+MutSigCV: RUN
+-------------
+Loading mutation_file...
+NOTE:  Both "gene" and "Hugo_Symbol" are present in mutation_file.  Using "gene".
+NOTE:  Both "patient" and "Tumor_Sample_Barcode" are present in mutation_file.  Using "patient".
+Loading coverage file...
+Loading covariate file...
+NOTE:  275/8420 gene names could not be mapped to coverage information.  Excluding them.
+NOTE:  Converting "-" to "_" in patient names.
+Building n and N tables...
+Processing covariates...
+Finding bagels...  1000/19263 2000/19263 3000/19263 4000/19263 5000/19263 6000/19263 7000/19263 8000/19263 9000/19263 10000/19263 11000/19263 12000/19263 13000/19263 14000/19263 15000/19263 16000/19263 17000/19263 18000/19263 19000/19263 
+Expanding to (x,X)_gcp...
+Calculating p-value using 2D Projection method...  1000/19263 2000/19263 3000/19263 4000/19263 5000/19263 6000/19263 7000/19263 8000/19263 9000/19263 10000/19263 11000/19263 12000/19263 13000/19263 14000/19263 15000/19263 16000/19263 17000/19263 18000/19263 19000/19263 
+Done.  Wrote results to ../mutsig_out/syn/cohort_062121/histology/Thy-AdenoCA/Thy-AdenoCA.sig_genes.txt
+Thy-AdenoCA
+...ended at Mon Jun 21 20:05:55 EDT 2021

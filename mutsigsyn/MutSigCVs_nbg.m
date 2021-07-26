@@ -873,27 +873,27 @@ function MutSig_runCV(mutation_file,coverage_file,covariate_file,output_file)
   if abs_log2_difference_silent_noncoding>max_abs_log2_difference_silent_noncoding, fprintf('Warning: silent and noncoding rates are too different.\n'); end
   
   % see if noncoding is OK: if not, give warning and zero it all out
-  ok = false;
-  if tot_n_noncoding==0
-    fprintf('NOTE:  no noncoding mutations.\n');
-  else
-    if tot_n_noncoding<min_tot_n_noncoding
-      fprintf('WARNING:  not enough noncoding mutations to analyze\n');
-    else
-      if tot_rate_noncoding<min_rate_noncoding || tot_rate_noncoding>max_rate_noncoding
-        fprintf('WARNING:  noncoding mutation rate out of range\n');
-      else
-        abs_log2_difference_noncoding_coding = abs(log2(tot_rate_noncoding/tot_rate_coding));
-        if abs_log2_difference_noncoding_coding>max_abs_log2_difference_noncoding_coding
-          fprintf('WARNING:  coding and noncoding rates are too different\n');
-        else
-          ok = true;
-  end,end,end,end
-  if ~ok
-    fprintf('Zeroing out all noncoding mutations and coverage for the rest of the calculation.\n');
-    n_noncoding(:) = 0;
-    N_noncoding(:) = 0;
-  end
+  %ok = false;
+  %if tot_n_noncoding==0
+    %fprintf('NOTE:  no noncoding mutations.\n');
+  %else
+    %if tot_n_noncoding<min_tot_n_noncoding
+      %fprintf('WARNING:  not enough noncoding mutations to analyze\n');
+    %else
+      %if tot_rate_noncoding<min_rate_noncoding || tot_rate_noncoding>max_rate_noncoding
+        %fprintf('WARNING:  noncoding mutation rate out of range\n');
+      %else
+        %abs_log2_difference_noncoding_coding = abs(log2(tot_rate_noncoding/tot_rate_coding));
+        %if abs_log2_difference_noncoding_coding>max_abs_log2_difference_noncoding_coding
+          %fprintf('WARNING:  coding and noncoding rates are too different\n');
+        %else
+          %ok = true;
+  %end,end,end,end
+  %if ~ok
+    %fprintf('Zeroing out all noncoding mutations and coverage for the rest of the calculation.\n');
+    %n_noncoding(:) = 0;
+    %N_noncoding(:) = 0;
+  %end
   
   % add total columns
   n_silent(:,end+1,:) = sum(n_silent,2);
@@ -1007,7 +1007,7 @@ function MutSig_runCV(mutation_file,coverage_file,covariate_file,output_file)
   badx = {};
   
   for g=1:ng, if ~mod(g,1000), fprintf('%d/%d ',g,ng); end
-    
+
     % STEP 1
     % for each sample, prioritize mutation categories according to how likely
     % it would be for this gene x sample to have a mutation there by chance.

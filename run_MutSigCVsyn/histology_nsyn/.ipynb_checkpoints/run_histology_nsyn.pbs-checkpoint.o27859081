@@ -1,0 +1,339 @@
+...started at Thu Jun 10 15:14:43 EDT 2021
+
+======================================
+  MutSigCV
+  v1.4
+
+  (c) Mike Lawrence and Gaddy Getz
+  Broad Institute of MIT and Harvard
+======================================
+
+
+MutSigCV: PREPROCESS
+--------------------
+Loading mutation_file...
+Loading coverage file...
+Processing mutation "effect"...
+WARNING:  66189/921348 mutations could not be mapped to effect using mutation_type_dictionary_file:
+
+    Start_Codon_SNP: [19]
+            lincRNA: [66170]
+          ----TOTAL: [66189]
+          They will be removed from the analysis.
+Processing mutation "categ"...
+Will use the categories already present.
+Writing preprocessed files.
+HUGE STRUCT: SAVING CHUNK 1/5
+  [save_struct] 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 2/5
+  [save_struct] 16/50 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 3/5
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 4/5
+  [save_struct] 17/50 18/50 19/50 20/50 21/50 22/50 23/50 24/50 25/50 26/50 27/50 28/50 29/50 30/50 31/50 32/50 33/50 34/50 35/50 36/50 37/50 38/50 39/50 40/50 41/50 42/50 43/50 44/50 45/50 46/50 47/50 48/50 49/50 50/50  [collapse]
+HUGE STRUCT: SAVING CHUNK 5/5
+HUGE STRUCT: SAVING CHUNK 1/3
+  [save_struct] 29/59 30/59 31/59 32/59 33/59 34/59 35/59 36/59 37/59 38/59 39/59 40/59 41/59 42/59 43/59 44/59 45/59 46/59 47/59 48/59 49/59 50/59 51/59 52/59 53/59 54/59 55/59 56/59 57/59 58/59 59/59  [collapse]
+HUGE STRUCT: SAVING CHUNK 2/3
+  [save_struct] 31/59 32/59 33/59 34/59 35/59 36/59 37/59 38/59 39/59 40/59 41/59 42/59 43/59 44/59 45/59 46/59 47/59 48/59 49/59 50/59 51/59 52/59 53/59 54/59 55/59 56/59 57/59 58/59 59/59  [collapse]
+HUGE STRUCT: SAVING CHUNK 3/3
+MutSig_preprocess finished.
+
+
+MutSigCV: RUN
+-------------
+Loading mutation_file...
+NOTE:  Both "gene" and "Hugo_Symbol" are present in mutation_file.  Using "gene".
+NOTE:  Both "patient" and "Tumor_Sample_Barcode" are present in mutation_file.  Using "patient".
+Loading coverage file...
+Loading covariate file...
+NOTE:  5642/22896 gene names could not be mapped to coverage information.  Excluding them.
+NOTE:  Converting "-" to "_" in patient names.
+
+cellContents =
+
+    '02c6a89349c549d18eb1195021e70d52'
+
+
+cellContents =
+
+    '0822761602a546e89db1f2d1d691ab23'
+
+
+cellContents =
+
+    '0e6ca8dc0f31467595b15920576daeff'
+
+
+cellContents =
+
+    '0f9e70b324cf4d76af7b84ace66ec5a7'
+
+
+cellContents =
+
+    '1727e88bdf0a4af291918c6061d98ad0'
+
+
+cellContents =
+
+    '190eb791383d4e27870de470630843e7'
+
+
+cellContents =
+
+    '1aff91a61b0f45758f4b4e064a50b886'
+
+
+cellContents =
+
+    '1db83e80bdf74d8d8008bd8406d641fc'
+
+
+cellContents =
+
+    '1fdab6a673464229aa8d5dbd258f0c60'
+
+
+cellContents =
+
+    '1ff155dddeb444e0b3a2e4875b618435'
+
+
+cellContents =
+
+    '1fff8b62534b4d71a65fe5f93b8b50ed'
+
+
+cellContents =
+
+    '21205681a0c748d081d40b7ef31158cf'
+
+
+cellContents =
+
+    '29fc38aaf36746a3a14da5f657ad0caa'
+
+
+cellContents =
+
+    '34d7b6cccfcf4178b075f4d129ab18f7'
+
+
+cellContents =
+
+    '3e604a1cb95f44ff9723e2fac845da3b'
+
+
+cellContents =
+
+    '469eddf26e0246bf820f6296a2b776e2'
+
+
+cellContents =
+
+    '46d35b82e1b74d35be5e3a70fd47e421'
+
+
+cellContents =
+
+    '5046f1b49d954841ba30691fa44719a2'
+
+
+cellContents =
+
+    '5193a4826ed94504bd7cc8b9e4103577'
+
+
+cellContents =
+
+    '54e78de0d3574125a904ab35e461572b'
+
+
+cellContents =
+
+    '6bbd66ddefee4d6eb02ff88e98526b82'
+
+
+cellContents =
+
+    '7158c9fda6334fefaa23bd285f2a87a8'
+
+
+cellContents =
+
+    '7625877a7a2b466f944b9e56689ad47b'
+
+
+cellContents =
+
+    '7e584ff60b814f8581dab8117afee326'
+
+
+cellContents =
+
+    '8159835924d54a8ba6e67a6f94289119'
+
+
+cellContents =
+
+    '8294a96959a14d3b895bf07e96bf9f7a'
+
+
+cellContents =
+
+    '83eca7b545bb44c08afe36f8988d0078'
+
+
+cellContents =
+
+    '878a7fe720ff46519587b4d6fd42e929'
+
+
+cellContents =
+
+    '9650640f154d4696aa963611c6fcee7b'
+
+
+cellContents =
+
+    '9988eb0701f64f838699bb63e0525f08'
+
+
+cellContents =
+
+    '9fb6b7be008448f7a2566d170e72e97f'
+
+
+cellContents =
+
+    'a0fe80e0e3ac485b8a1a4c80c101b874'
+
+
+cellContents =
+
+    'a315b798f03748d591ede733e3bbd6ee'
+
+
+cellContents =
+
+    'a8041e86071e46cd8fb57ecdc1ab0553'
+
+
+cellContents =
+
+    'ab923db754e84a50b7fdc2b4b300041e'
+
+
+cellContents =
+
+    'b537bc07999849f4bbbe5b617152bfd9'
+
+
+cellContents =
+
+    'b86e88e70d5f4b32a35fdc97251ab990'
+
+
+cellContents =
+
+    'bcc819ebf4d84ddc9fdca6307fb6741b'
+
+
+cellContents =
+
+    'c0812962a34548b7aec001336c2d1eed'
+
+
+cellContents =
+
+    'c121de1578f7469891bffd0485c466c2'
+
+
+cellContents =
+
+    'c2124bb230e140939a8a3a188a6dc0a9'
+
+
+cellContents =
+
+    'c76f7fcc27484b6d805ed21652dd5e3a'
+
+
+cellContents =
+
+    'ca137611533a4d20a85d8e4c3a1eab2d'
+
+
+cellContents =
+
+    'd3709eeaca2a49acb79c871a5473d450'
+
+
+cellContents =
+
+    'd4b80307abbd48bbb52c6dcd409699a2'
+
+
+cellContents =
+
+    'dd67dec635dd4efeb913ed4884855365'
+
+
+cellContents =
+
+    'de8ef60b4dbe4aa8adef6f58cdfada29'
+
+
+cellContents =
+
+    'dfa20d2d1ba3476ab4b921d21470bee2'
+
+
+cellContents =
+
+    'e2b5c926491d430d8d9c5c73d7752d1b'
+
+
+cellContents =
+
+    'e2e6a409b64d463cac3be7987a3124f0'
+
+
+cellContents =
+
+    'e52ffa79557a402481f3f3826c227ec5'
+
+
+cellContents =
+
+    'ee96366756b149bd8896e07b536d3014'
+
+
+cellContents =
+
+    'ef673d3d20314036ba254bc7ef04075b'
+
+
+cellContents =
+
+    'f35f7712d5c647f698ed704edbbc1e19'
+
+
+cellContents =
+
+    'fb8b5ff541644276b75bb0ee6bda7329'
+
+
+cellContents =
+
+    'feccc27e5c2e433987460945fee93c1e'
+
+Building n and N tables...
+Processing covariates...
+Finding bagels...  1000/18871 2000/18871 3000/18871 4000/18871 5000/18871 6000/18871 7000/18871 8000/18871 9000/18871 10000/18871 11000/18871 12000/18871 13000/18871 14000/18871 15000/18871 16000/18871 17000/18871 18000/18871 
+Expanding to (x,X)_gcp...
+Calculating p-value using 2D Projection method...  1000/18871 2000/18871 3000/18871 4000/18871 5000/18871 6000/18871 7000/18871 8000/18871 9000/18871 10000/18871 11000/18871 12000/18871 13000/18871 14000/18871 15000/18871 16000/18871 17000/18871 18000/18871 
+Done.  Wrote results to ../mutsig_out/nsyn/cohort_060921/histology/Head-SCC/Head-SCC.sig_genes.txt
+Head-SCC
+...ended at Thu Jun 10 15:22:06 EDT 2021

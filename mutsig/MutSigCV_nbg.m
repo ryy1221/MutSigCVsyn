@@ -943,8 +943,8 @@ function MutSig_runCV(mutation_file,coverage_file,covariate_file,output_file)
     nfit=0; Nfit=0;
     for ni=0:max_neighbors, gidx = ord(ni+1);
       
-      ngene = G.n_silent(gidx) + G.n_noncoding(gidx);
-      Ngene = G.N_silent(gidx) + G.N_noncoding(gidx);
+      ngene = G.n_noncoding(gidx);
+      Ngene = G.N_noncoding(gidx);
       if ni==0, ngene0=ngene; Ngene0=Ngene; end
       nfit=nfit+ngene; Nfit=Nfit+Ngene;
       

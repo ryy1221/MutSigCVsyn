@@ -9,3 +9,7 @@ his_cov_maf/**
 !/**/.gitkeep
 proc_09152020/**
 multitumor/**
+old/**
+.ipynb_checkpoints
+cov_process/figure/**
+cov_process/process_old/**

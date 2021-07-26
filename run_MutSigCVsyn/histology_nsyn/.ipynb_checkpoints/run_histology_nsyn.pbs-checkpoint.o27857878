@@ -1,0 +1,19 @@
+...started at Thu Jun 10 14:42:50 EDT 2021
+Error using cd
+Cannot CD to /gpfs/group/epo2/default/yur97/gitlab/pcawg-to-mutsigcv/run_MutSigCVsyn/histology_nsyn/../mutsig (Name is nonexistent or not a directory).
+
+Bone-Benign
+Traceback (most recent call last):
+  File "run_histology_nsyn.py", line 37, in <module>
+    runMutSigCV_nsyn(feat)
+  File "run_histology_nsyn.py", line 33, in runMutSigCV_nsyn
+    eng.cd(r'../mutsig/', nargout = 0)
+  File "/storage/home/yur97/.local/lib/python3.6/site-packages/matlab/engine/matlabengine.py", line 71, in __call__
+    _stderr, feval=True).result()
+  File "/storage/home/yur97/.local/lib/python3.6/site-packages/matlab/engine/futureresult.py", line 67, in result
+    return self.__future.result(timeout)
+  File "/storage/home/yur97/.local/lib/python3.6/site-packages/matlab/engine/fevalfuture.py", line 82, in result
+    self._result = pythonengine.getFEvalResult(self._future,self._nargout, None, out=self._out, err=self._err)
+matlab.engine.MatlabExecutionError: Cannot CD to /gpfs/group/epo2/default/yur97/gitlab/pcawg-to-mutsigcv/run_MutSigCVsyn/histology_nsyn/../mutsig (Name is nonexistent or not a directory).
+
+...ended at Thu Jun 10 14:43:31 EDT 2021

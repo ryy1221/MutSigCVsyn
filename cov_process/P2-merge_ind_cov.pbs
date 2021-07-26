@@ -1,0 +1,14 @@
+#!/bin/bash
+#PBS -l pmem=50g
+#PBS -l nodes=1:ppn=4
+#PBS -j oe 
+#PBS -l walltime=10:00:00
+
+echo "...started at $(date)"
+cd $PBS_O_WORKDIR
+module load python
+
+python P2-merge_ind_cov.py
+echo "...ended at $(date)" 
+
+####### ^---- JOB COMMANDS ABOVE ----^

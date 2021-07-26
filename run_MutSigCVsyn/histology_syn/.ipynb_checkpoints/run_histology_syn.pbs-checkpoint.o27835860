@@ -1,0 +1,53 @@
+...started at Wed Jun  9 16:20:10 EDT 2021
+
+======================================
+  MutSigCV
+  v1.4
+
+  (c) Mike Lawrence and Gaddy Getz
+  Broad Institute of MIT and Harvard
+======================================
+
+
+MutSigCV: PREPROCESS
+--------------------
+Loading mutation_file...
+Loading coverage file...
+Processing mutation "effect"...
+WARNING:  1599/23106 mutations could not be mapped to effect using mutation_type_dictionary_file:
+
+    Start_Codon_SNP: [1]
+            lincRNA: [1598]
+          ----TOTAL: [1599]
+          They will be removed from the analysis.
+Processing mutation "categ"...
+Will use the categories already present.
+Writing preprocessed files.
+HUGE STRUCT: SAVING CHUNK 1/4
+  [save_struct] 42/92 43/92 44/92 45/92 46/92 47/92 48/92 49/92 50/92 51/92 52/92 53/92 54/92 55/92 56/92 57/92 58/92 59/92 60/92 61/92 62/92 63/92 64/92 65/92 66/92 67/92 68/92 69/92 70/92 71/92 72/92 73/92 74/92 75/92 76/92 77/92 78/92 79/92 80/92 81/92 82/92 83/92 84/92 85/92 86/92 87/92 88/92 89/92 90/92 91/92 92/92  [collapse]
+HUGE STRUCT: SAVING CHUNK 2/4
+  [save_struct] 45/92 46/92 47/92 48/92 49/92 50/92 51/92 52/92 53/92 54/92 55/92 56/92 57/92 58/92 59/92 60/92 61/92 62/92 63/92 64/92 65/92 66/92 67/92 68/92 69/92 70/92 71/92 72/92 73/92 74/92 75/92 76/92 77/92 78/92 79/92 80/92 81/92 82/92 83/92 84/92 85/92 86/92 87/92 88/92 89/92 90/92 91/92 92/92  [collapse]
+HUGE STRUCT: SAVING CHUNK 3/4
+  [save_struct] 45/92 46/92 47/92 48/92 49/92 50/92 51/92 52/92 53/92 54/92 55/92 56/92 57/92 58/92 59/92 60/92 61/92 62/92 63/92 64/92 65/92 66/92 67/92 68/92 69/92 70/92 71/92 72/92 73/92 74/92 75/92 76/92 77/92 78/92 79/92 80/92 81/92 82/92 83/92 84/92 85/92 86/92 87/92 88/92 89/92 90/92 91/92 92/92  [collapse]
+HUGE STRUCT: SAVING CHUNK 4/4
+  [save_struct] 71/92 72/92 73/92 74/92 75/92 76/92 77/92 78/92 79/92 80/92 81/92 82/92 83/92 84/92 85/92 86/92 87/92 88/92 89/92 90/92 91/92 92/92  [collapse]
+MutSig_preprocess finished.
+
+
+MutSigCV: RUN
+-------------
+Loading mutation_file...
+NOTE:  Both "gene" and "Hugo_Symbol" are present in mutation_file.  Using "gene".
+NOTE:  Both "patient" and "Tumor_Sample_Barcode" are present in mutation_file.  Using "patient".
+Loading coverage file...
+Loading covariate file...
+NOTE:  756/4985 gene names could not be mapped to coverage information.  Excluding them.
+NOTE:  Converting "-" to "_" in patient names.
+Building n and N tables...
+Processing covariates...
+Finding bagels...  1000/18871 2000/18871 3000/18871 4000/18871 5000/18871 6000/18871 7000/18871 8000/18871 9000/18871 10000/18871 11000/18871 12000/18871 13000/18871 14000/18871 15000/18871 16000/18871 17000/18871 18000/18871 
+Expanding to (x,X)_gcp...
+Calculating p-value using 2D Projection method...  1000/18871 2000/18871 3000/18871 4000/18871 5000/18871 6000/18871 7000/18871 8000/18871 9000/18871 10000/18871 11000/18871 12000/18871 13000/18871 14000/18871 15000/18871 16000/18871 17000/18871 18000/18871 
+Done.  Wrote results to ../../mutsig_out/syn/cohort_060921/histology/CNS-PiloAstro/CNS-PiloAstro.sig_genes.txt
+CNS-PiloAstro
+...ended at Wed Jun  9 16:24:02 EDT 2021

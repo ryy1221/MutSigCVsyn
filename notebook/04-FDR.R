@@ -7,10 +7,8 @@ require(gridExtra)
 library(dplyr)
 
 #-----Read file-----
-dir.sig = './figure4/p-val_distribution'
-dir.out.fig = './figure4/fdr_figs'
-dir.out.func = './figure4/fdr_funcs'
-dir.out.res = './figure4/fdr_res'
+dir.sig = './figure4/'
+dir.out.res = './figure4/'
 
 # Parameters for reading file
 feature_type = 'histology'; run = 'cohort_072221'; threshold = 1;
@@ -87,6 +85,8 @@ df.res.sig = df.res.sig[df.res.sig$FDR<0.1,]
 
 # fig = arrangeGrob(p2, p1, ncol=2)
 # saveRDS(res,file.path(dir.out.func,'fdr.063021.rds'))
-write.csv(df.res.sig,file.path(dir.out.res, 'fdr.072221.csv'))
+fname = paste0(feature_type,'.syn.df_all_forheatmap.',
+               run, '.',threshold,'.csv')
+write.csv(df.res.sig,file.path(dir.out.res, fname))
 #ggsave(file=file.path(dir.out.fig,'fsdr.063021.png'), fig)
 

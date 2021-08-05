@@ -48,6 +48,13 @@ str_cols = ['dcc_specimen_type','histology_tier3','histology_tier4',
         'tumour_histological_type',\
        'tumour_stage', 'tumour_histological_comment', 'specimen_donor_treatment_type']
 
+#-------------Get Gene ensemble ID------------------
+
+def get_id(gene):
+    idx = df_nsig[df_nsig['name'] == gene_name]['id'].values.tolist()[0]
+    print(idx)
+
+
 #-------------Syn Patient sub histology and mutation info------------------
 def get_num_str(gene):
     global df_syn, dir_maf

@@ -17,7 +17,7 @@ feat = vars(arg)['histology_type']
 print(feat)
 
 # Relative path to the mutsigsyn folder
-covariates = '../anno_ref/MutSigCVsyn_inputs/gene.covariates.converted.txt'
+covariates = '../anno_ref/MutSigCVsyn_inputs/gene.covariates.new.txt'
 mut_dic = '../anno_ref/MutSigCVsyn_inputs/mutation_type_dictionary_file_nbg.txt'
 chain_f = '../anno_ref/MutSigCVsyn_inputs/chr_files_hg19'
 dir_cov = '../cov_out/cov_cohorts_072221'
@@ -28,10 +28,10 @@ def runMutSigCV_syn(feat):
     
     maf = os.path.join(dir_maf, feature_type,feat+'.csv')
     cov = os.path.join(dir_cov, feature_type,feat+'.csv')
-    outp = os.path.join('../mutsig_out/syn/cohort_072221/', feature_type, feat, feat)
+    outp = os.path.join('../mutsig_out/syn/cohort_090821/', feature_type, feat, feat)
 
     eng.cd(r'../../mutsigsyn/', nargout = 0)
-    eng.MutSigCVs_nbg(maf,cov, covariates, outp, mut_dic, chain_f, nargout = 0)
+    eng.MutSigCVsyn(maf,cov, covariates, outp, mut_dic, chain_f, nargout = 0)
     end = time.time()
 
 runMutSigCV_syn(feat)

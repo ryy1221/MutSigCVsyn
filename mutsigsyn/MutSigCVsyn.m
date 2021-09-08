@@ -769,7 +769,6 @@ function MutSig_runCV(mutation_file,coverage_file,covariate_file,output_file)
   if any(~strcmp(namebefore,M.patient)), fprintf('NOTE:  Converting "-" to "_" in patient names.\n'); end
 
   pat=[]; [pat.name tmp M.patient_idx] = unique(M.patient);
-  pat.cov_idx = listmap(pat.name,coverage_patient_names);
 
   %----------
   % Reformat PCAWG patient names for recognition in MutSigCVsyn
@@ -783,6 +782,8 @@ function MutSig_runCV(mutation_file,coverage_file,covariate_file,output_file)
     end
   end
   %----------
+
+  pat.cov_idx = listmap(pat.name,coverage_patient_names);
 
   np = slength(pat);
   if np<2, error('MutSig is not applicable to single patients.\n'); end

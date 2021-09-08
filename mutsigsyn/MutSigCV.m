@@ -770,6 +770,20 @@ function MutSig_runCV(mutation_file,coverage_file,covariate_file,output_file)
 
   pat=[]; [pat.name tmp M.patient_idx] = unique(M.patient);
   pat.cov_idx = listmap(pat.name,coverage_patient_names);
+
+  %----------
+  % Reformat PCAWG patient names for recognition in MutSigCVsyn
+  for k = 1 : length(pat.name)
+    cellContents = pat.name{k};
+    cellContents = regexprep(cellContents,'_','');
+    pat.name{k}=cellContents;
+    if ismember(cellContents(1),'0123456789')
+        cellContents=append('x',cellContents);
+        pat.name{k}=cellContents;
+    end
+  end
+  %----------
+
   np = slength(pat);
   if np<2, error('MutSig is not applicable to single patients.\n'); end
 
@@ -849,6 +863,10 @@ function MutSig_runCV(mutation_file,coverage_file,covariate_file,output_file)
   max_rate_noncoding = 1e-3;
   max_abs_log2_difference_nonsilent_silent = 1.0;
   max_abs_log2_difference_noncoding_coding = 1.0;
+  %----------
+  % Add threshold for silent and non-coding mutation rate difference
+  max_abs_log2_difference_silent_noncoding = 1.0;
+  %----------
   
   % see if silent and nonsilent are OK: if not, give warning
   if tot_n_nonsilent<min_tot_n_nonsilent || tot_n_silent<min_tot_n_silent, error('not enough mutations to analyze'); end
@@ -856,29 +874,17 @@ function MutSig_runCV(mutation_file,coverage_file,covariate_file,output_file)
   if tot_rate_silent<min_rate_silent || tot_rate_silent>max_rate_silent, error('silent mutation rate out of range'); end
   abs_log2_difference_nonsilent_silent = abs(log2(tot_rate_nonsilent/tot_rate_silent));
   if abs_log2_difference_nonsilent_silent>max_abs_log2_difference_nonsilent_silent, fprintf('Warning: silent and nonsilent rates are too different.\n'); end
-  
-  % see if noncoding is OK: if not, give warning and zero it all out
-  ok = false;
-  if tot_n_noncoding==0
-    fprintf('NOTE:  no noncoding mutations.\n');
-  else
-    if tot_n_noncoding<min_tot_n_noncoding
-      fprintf('WARNING:  not enough noncoding mutations to analyze\n');
-    else
-      if tot_rate_noncoding<min_rate_noncoding || tot_rate_noncoding>max_rate_noncoding
-        fprintf('WARNING:  noncoding mutation rate out of range\n');
-      else
-        abs_log2_difference_noncoding_coding = abs(log2(tot_rate_noncoding/tot_rate_coding));
-        if abs_log2_difference_noncoding_coding>max_abs_log2_difference_noncoding_coding
-          fprintf('WARNING:  coding and noncoding rates are too different\n');
-        else
-          ok = true;
-  end,end,end,end
-  if ~ok
-    fprintf('Zeroing out all noncoding mutations and coverage for the rest of the calculation.\n');
-    n_noncoding(:) = 0;
-    N_noncoding(:) = 0;
-  end
+  %----------
+  % See if silent and non-coding mutation rate are too different
+  abs_log2_difference_silent_noncoding = abs(log2(tot_rate_silent/tot_rate_noncoding));
+  if abs_log2_difference_silent_noncoding>max_abs_log2_difference_silent_noncoding, fprintf('Warning: silent and noncoding rates are too different.\n'); end
+  %----------
+
+  %----------
+  % Instead of checking if non-coding is ok and zero out, check the non-coding and coding rate differences
+  abs_log2_difference_noncoding_coding = abs(log2(tot_rate_noncoding/tot_rate_coding));
+  if abs_log2_difference_noncoding_coding>max_abs_log2_difference_noncoding_coding, fprintf('WARNING:  coding and noncoding rates are too different\n');end
+  %----------
   
   % add total columns
   n_silent(:,end+1,:) = sum(n_silent,2);
@@ -931,9 +937,11 @@ function MutSig_runCV(mutation_file,coverage_file,covariate_file,output_file)
     % expand bagel outward until quality falls below qual_min
     nfit=0; Nfit=0;
     for ni=0:max_neighbors, gidx = ord(ni+1);
-      
-      ngene = G.n_silent(gidx) + G.n_noncoding(gidx);
-      Ngene = G.N_silent(gidx) + G.N_noncoding(gidx);
+      %----------
+      % Only use non-coding mutations as background
+      ngene = G.n_noncoding(gidx);
+      Ngene = G.N_noncoding(gidx);
+      %----------
       if ni==0, ngene0=ngene; Ngene0=Ngene; end
       nfit=nfit+ngene; Nfit=Nfit+Ngene;
       
@@ -983,7 +991,10 @@ function MutSig_runCV(mutation_file,coverage_file,covariate_file,output_file)
   
   fprintf('Calculating p-value using 2D Projection method...  ');
   
-  null_score_boost = 3;
+  %----------
+  % Cancel null score boost 
+  null_score_boost = 0;
+  %----------
   min_effect_size = 1.25;
   convolution_numbins = 1000;
   
@@ -995,8 +1006,11 @@ function MutSig_runCV(mutation_file,coverage_file,covariate_file,output_file)
     % for each sample, prioritize mutation categories according to how likely
     % it would be for this gene x sample to have a mutation there by chance.
     
-    N = reshape(N_nonsilent(g,1:ncat,:),ncat,np)';
-    n = reshape(n_nonsilent(g,1:ncat,:),ncat,np)';
+    %----------
+    % Predict silent mutations in silent positions
+    N = reshape(N_silent(g,1:ncat,:),ncat,np)';
+    n = reshape(n_silent(g,1:ncat,:),ncat,np)';
+    %----------
     x = reshape(x_gcp(g,1:ncat,:),ncat,np)';
     X = reshape(X_gcp(g,1:ncat,:),ncat,np)';
     P0 = hyge2pdf(0,N,x,X);

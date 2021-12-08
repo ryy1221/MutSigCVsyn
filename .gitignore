@@ -7,4 +7,5 @@ notebook/figure4/**
 notebook/figure5/depmap/**
 notebook/figure5/syn_candidate_anlyze/**
 manuscript/**
-data/**
+data/*
+!data/.gitkeep

@@ -1,21 +1,10 @@
 # ignore coverage input folder, annotation folder and maf input folder content
-cov_out/**
-anno_ref/**
-maf_out/**
-maf_raw/**
-mutsig_out/**
-org_cov_maf/**
-his_cov_maf/**
+out/**
 !/**/.gitkeep
-proc_09152020/**
-multitumor/**
-old/**
 .ipynb_checkpoints
 notebook/figure1/**
 notebook/figure4/**
 notebook/figure5/depmap/**
 notebook/figure5/syn_candidate_anlyze/**
-cov_process/figure/**
-cov_process/process_old/**
 manuscript/**
 data/**

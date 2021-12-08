@@ -17,3 +17,5 @@ notebook/figure5/depmap/**
 notebook/figure5/syn_candidate_anlyze/**
 cov_process/figure/**
 cov_process/process_old/**
+manuscript/**
+data/**

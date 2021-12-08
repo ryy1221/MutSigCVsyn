@@ -4,6 +4,9 @@ import pandas as pd
 import re,time,os,pickle
 from tqdm import tqdm
 from multiprocessing import Pool
+import multiprocessing as mp
+from functools import partial
+
 
 ### reference table
 nuc = ["A", "T", "C", "G"]
@@ -87,9 +90,9 @@ def validate_categ(original_allele, altered_allele,
 
     return categ
 
-def allele_categ_assign(idx,df_maf):
-    genome_change = df_maf.loc[idx,'Genome_Change']
-    ref_contxt = df_maf.loc[idx,'ref_context']
+def allele_categ_assign(idx,df):
+    genome_change = df.loc[idx,'Genome_Change']
+    ref_contxt = df.loc[idx,'ref_context']
     if '>' in genome_change:
         alleles = re.findall(r'[A-Z]+>[A-Z]+', genome_change)[0].split('>')
         ref_allele = alleles[0]
@@ -101,7 +104,8 @@ def allele_categ_assign(idx,df_maf):
         categ = validate_categ(ref_allele, alter_allele, tri_nucleotide=tri_nuc)
     else:
         categ = 7
-    return categ
+    df.loc[idx,'categ'] = int(categ)
+
 
 ### This function assing categ to patients
 def categ_assign(patient, dir_ind = '../data/maf/intermediate/individual/split',dir_categ_out = \
@@ -109,15 +113,17 @@ def categ_assign(patient, dir_ind = '../data/maf/intermediate/individual/split',
     
     # check if file exists, not run if exists
     outf = os.path.join(dir_categ_out, patient+'.to_merge.categ.csv')
-    if os.path.exists(outf):
-        return
-    print(outf)
+    outfzip = os.path.join(dir_categ_out, patient+'.to_merge.categ.csv.gz')
+    # if os.path.exists(outf) or os.path.exists(outfzip):
+    #     return
+    # print(f'start assigning categ for {outf}...')
     
     df_maf = pd.read_csv(os.path.join(dir_ind,patient+'.to_merge.csv'), index_col = 0)
     df_maf = df_maf.reset_index(drop = True)
     df_maf.columns = maf_cols
-
-    for idx in tqdm(df_maf.index):
+    
+    # Multiprocess the mutations
+    for idx in df_maf.index:
         genome_change = df_maf.loc[idx,'Genome_Change']
         ref_contxt = df_maf.loc[idx,'ref_context']
         if '>' in genome_change:
@@ -132,13 +138,10 @@ def categ_assign(patient, dir_ind = '../data/maf/intermediate/individual/split',
         else:
             categ = 7
         df_maf.loc[idx,'categ'] = int(categ)
-    print(f'Finish{patient}...')
-    df_maf.to_csv(os.path.join(dir_categ_out, patient+'.to_merge.categ.csv'))
 
-for patients in self.patient_list:
-    p = mp.Process()
-    function1 = partial(categ_assign,dir_ind = self.dir_out_intermediate_ind_split,\
-                   dir_categ_out = self.dir_out_intermediate_ind_categ)
-    p = mp.Process(target=function1, args=(patients,))
-    processes.append(p)
-[x.start() for x in processes]
+    print(f'saving {patient} maf file...')
+    # df_maf.to_csv(os.path.join(dir_categ_out, patient+'.to_merge.categ.csv'))
+    df_maf.to_csv(os.path.join(dir_categ_out, patient+'.to_merge.categ.csv.gz')\
+         ,chunksize=100000,compression='gzip',encoding='utf-8')
+    print(f'finish saving {patient} maf file...')
+

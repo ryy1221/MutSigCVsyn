@@ -48,9 +48,9 @@ def runMutSigCV_nsyn(feat):
     
     maf = os.path.join(dir_maf,feat+'.csv')
     cov = os.path.join(dir_cov,feat+'.csv')
-    outp = os.path.join('../mutsig_out/nsyn/', out_dir ,feat, feat)
+    outp = os.path.join('../out/nsyn/', out_dir ,feat, feat)
 
-    eng.cd(r'../../../mutsig/', nargout = 0)
+    eng.cd(r'../MutSigCVsyn_nsyn/', nargout = 0)
     eng.MutSigCV_nbg(maf,cov, covariates, outp, mut_dic, chain_f, nargout = 0)
     end = time.time()
 

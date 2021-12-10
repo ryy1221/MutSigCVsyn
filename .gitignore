@@ -4,8 +4,7 @@ out/**
 .ipynb_checkpoints
 notebook/figure1/**
 notebook/figure4/**
-notebook/figure5/depmap/**
-notebook/figure5/syn_candidate_anlyze/**
+notebook/figure5/**
 manuscript/**
 data/*
 !data/.gitkeep

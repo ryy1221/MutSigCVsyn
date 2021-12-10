@@ -2,9 +2,9 @@
 out/**
 !/**/.gitkeep
 .ipynb_checkpoints
-notebook/figure1/*
-notebook/figure4/*
-notebook/figure5/*
+notebook/*
+!notebook/.ipynb
+!notebook/.py
 manuscript/**
 data/*
 !data/.gitkeep

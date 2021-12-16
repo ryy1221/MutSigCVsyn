@@ -38,6 +38,10 @@ This project is for processing PCAWG somatic mutation and coverage files. The pr
     └── README.md
 
 ### How to set up the environment
+```
+conda env create -f environment.yml
+conda activate Msigsyn
+```
 
 ### Processed and ready-to-use files available upon request, but here are some public available resources:
 1. Coverage: Retrieve .wig file for processing coverage files at [PCAWG portal](https://dcc.icgc.org/releases/PCAWG/consensus_snv_indel/wig_files)

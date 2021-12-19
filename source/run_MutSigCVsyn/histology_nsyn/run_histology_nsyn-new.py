@@ -20,21 +20,21 @@ print(feat);print(cova);print(hyper)
 # Relative path to the mutsigsyn folder
 # 1. covariate file
 if cova == 'old':
-    covariates = '../data/MutSigCVsyn_inputs/gene.covariates.txt'
+    covariates = '../../data/MutSigCVsyn_inputs/gene.covariates.txt'
 elif cova == 'new':
-    covariates = '../data/MutSigCVsyn_inputs/gene.covariates.new.txt'
+    covariates = '../../data/MutSigCVsyn_inputs/gene.covariates.new.txt'
     
 # 2. mutation dictionary and chain files -- nochange
-mut_dic = '../data/MutSigCVsyn_inputs/mutation_type_dictionary_file_nbg.txt'
-chain_f = '../data/MutSigCVsyn_inputs/chr_files_hg19'
+mut_dic = '../../data/MutSigCVsyn_inputs/mutation_type_dictionary_file_nbg.txt'
+chain_f = '../../data/MutSigCVsyn_inputs/chr_files_hg19'
 
 # 3. mutation/coverage files:
 if hyper in ['no','n']:
-    dir_cov = '../data/cov/histology_new/'
-    dir_maf = '../data/maf/histology_new/'
+    dir_cov = '../../data/cov/histology_new/'
+    dir_maf = '../../data/maf/histology_new/'
 elif hyper in ['yes','y']:
-    dir_cov = '../data/cov/histology_new_nohypermutator/'
-    dir_maf = '../data/maf/histology_new_nohypermutator/'
+    dir_cov = '../../data/cov/histology_new_nohypermutator/'
+    dir_maf = '../../data/maf/histology_new_nohypermutator/'
     
 # 4. output directory name
 out_dir = 'cohort_new'
@@ -48,7 +48,7 @@ def runMutSigCV_nsyn(feat):
     
     maf = os.path.join(dir_maf,feat+'.csv')
     cov = os.path.join(dir_cov,feat+'.csv')
-    outp = os.path.join('../out/nsyn/', out_dir ,feat, feat)
+    outp = os.path.join('../../out/nsyn/', out_dir ,feat, feat)
 
     eng.cd(r'../MutSigCVsyn_nsyn/', nargout = 0)
     eng.MutSigCV_nbg(maf,cov, covariates, outp, mut_dic, chain_f, nargout = 0)

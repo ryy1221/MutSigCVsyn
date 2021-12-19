@@ -1,5 +1,6 @@
 # ignore coverage input folder, annotation folder and maf input folder content
 out/**
+!out/example/example_Lymph-BNHL/example-Lymph-BNHL.sig_genes.txt
 !/**/.gitkeep
 .ipynb_checkpoints
 notebook/*
@@ -8,3 +9,4 @@ notebook/*
 manuscript/**
 data/*
 !data/.gitkeep
+supp/*

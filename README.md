@@ -1,6 +1,5 @@
-# PCAWG-to-MutSigCV
-
-This project is for processing PCAWG somatic mutation and coverage files. The processed files are used as input for MutSigCV to identify significantly mutated gene in cancer.
+# MutSigCVsyn
+MutSigCVsyn is an algorithm identified from [MutSigCV, Lawrence et al 2013](https://www.nature.com/articles/nature12213) for identifying synonymous cancer drivers. Running MutSigCVsyn using whole genome cancer mutation and coverage file. The current version is majorly designed for utilizing [PCAWG](https://www.nature.com/articles/s41586-020-1969-6) database. Other data can be used by making modification. 
 
 ### Directory layout
     .
@@ -42,8 +41,26 @@ This project is for processing PCAWG somatic mutation and coverage files. The pr
 conda env create -f environment.yml
 conda activate Msigsyn
 ```
+### How to run MutSigCVsyn(Example for single cohort, running in Jupyter notebook)
+1. Obtain input files(available upon request)
+    1. Example coverage file should be stored at `./data/cov/example`
+    2. Example mutation annotation file should be stored at `./data/maf/example`
+    3. Other files are stored at `./data/MutSigCVsyn_inputs`
+2. Go to `./source/run_MutSigCVsyn/histology_syn/Example-single_MutSigCvsyn.ipynb` and run the notebook.
+3. Expect less than 15min to finish.(Options to specify output file name can be find in the notebook)
+4. Output files are stored at `../out/example/`
 
-### Processed and ready-to-use files available upon request, but here are some public available resources:
+### Alternative option to run MutSigCVsyn by parallel for multiple histology types
+1. Source code are stored at `./source/run_MutSigCVsyn/histology_syn` (For non-synonymous result, there is a parallel folder `histology_nsyn`). Jobs can be submitted in Jupyter notebook(`submit_MutSigCVsyn.ipynb`, where you can input parameters and test), but bash command can also be used. 
+2. The main bash command is `python run_histology_syn-new.py ${HISTOLOGY_NAME} --c ${COVARIATE} --hyperm ${HYPERMUTATOR}`, which is already included if you run the Jupyter notebook. 
+
+| Parameter | Value | Annotation/Description | 
+| ------------- | ------------- | -------------------- | 
+| HISTOLOGY_NAME  | The PCAWG histology names  | Also linked to the name of maf and coverage files |
+| COVARIATE  | y/n;Yes/No | Whether to use the new covariate file for Gencode v10 |
+| HYPERMUTATOR |y/n;Yes/No | Whether to exclude hypermutators in the cohort.Yes means excluding |
+
+### Processed and ready-to-use files available upon request, but here are some public available resources for reference:
 1. Coverage: Retrieve .wig file for processing coverage files at [PCAWG portal](https://dcc.icgc.org/releases/PCAWG/consensus_snv_indel/wig_files)
 2. Mutation: Retrieve PCAWG SNV MAF files(The ICGA part could be retrieved at [PCAWG portal](https://dcc.icgc.org/releases/PCAWG/consensus_snv_indel/), the TCGA part is controlled access so make sure you have the access, then go to GDC website to retrieve the data)
 3. Covariate and mutation dictionary input files. All of them are available to download at [MutSigCV website](https://software.broadinstitute.org/cancer/cga/mutsig). **Updated covariate file, mutation type dictionary file available upon request**

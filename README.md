@@ -60,7 +60,7 @@ conda activate Msigsyn
 | COVARIATE  | y/n;Yes/No | Whether to use the new covariate file for Gencode v10 |
 | HYPERMUTATOR |y/n;Yes/No | Whether to exclude hypermutators in the cohort.Yes means excluding |
 
-### Processed and ready-to-use files available upon request, but here are some public available resources for reference:
+### Processed and ready-to-use files available upon request(except for controlled access data), but here are some public available resources for reference:
 1. Coverage: Retrieve .wig file for processing coverage files at [PCAWG portal](https://dcc.icgc.org/releases/PCAWG/consensus_snv_indel/wig_files)
 2. Mutation: Retrieve PCAWG SNV MAF files(The ICGA part could be retrieved at [PCAWG portal](https://dcc.icgc.org/releases/PCAWG/consensus_snv_indel/), the TCGA part is controlled access so make sure you have the access, then go to GDC website to retrieve the data)
 3. Covariate and mutation dictionary input files. All of them are available to download at [MutSigCV website](https://software.broadinstitute.org/cancer/cga/mutsig). **Updated covariate file, mutation type dictionary file available upon request**

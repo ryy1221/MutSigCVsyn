@@ -3,7 +3,7 @@ MutSigCVsyn is an algorithm identified from [MutSigCV, Lawrence et al 2013](http
 
 ### Directory layout
     .
-    ├── data                            # Input and reference files(All content available upon request, some are available to download in official website).  
+    ├── data                            # Input and reference files(Publicly accessible content available upon request, some are available to download in official website).  
     │   ├── anno_refs                   # Including unprocessed annotation and anlysis inputs.  
     │   │   ├── gencode_v19             # Gencode v19 annotation and GRCh37 sequence file.  
     │   │   ├── pcawg_rnaseq            # PCAWG RNA-seq files.  
